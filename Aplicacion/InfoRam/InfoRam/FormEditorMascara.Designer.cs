@@ -158,6 +158,7 @@
             toolStripButton1.Name = "toolStripButton1";
             toolStripButton1.Size = new Size(23, 22);
             toolStripButton1.Text = "Nuevo";
+            toolStripButton1.Click += toolStripButton1_Click;
             // 
             // toolStripButton2
             // 
@@ -167,6 +168,7 @@
             toolStripButton2.Name = "toolStripButton2";
             toolStripButton2.Size = new Size(23, 22);
             toolStripButton2.Text = "Abrir";
+            toolStripButton2.Click += toolStripButton2_Click;
             // 
             // toolStripButton3
             // 
@@ -176,6 +178,7 @@
             toolStripButton3.Name = "toolStripButton3";
             toolStripButton3.Size = new Size(23, 22);
             toolStripButton3.Text = "Guardar";
+            toolStripButton3.Click += toolStripButton3_Click;
             // 
             // PanelMascara
             // 

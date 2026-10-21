@@ -25,6 +25,9 @@ namespace InfoRam
         private Brush BakBrush;
 //        Modelo.ModeloDatos FModelo;
         private MiGraphics FGraphics;
+        private readonly CMascaraChip mascara = new CMascaraChip();
+        private Size tamMascaraAnterior;
+        private Point origenMascaraAnterior;
         CCuadricula Cuadricula;
         private int FAnchoCuadricula;
         private bool FMostrarCuadricula;
@@ -48,6 +51,46 @@ namespace InfoRam
                 FFilas = value;
                 Invalidate();
             }
+        }
+
+        public bool[] ObtieneVisibilidadPads()
+        {
+            bool[] visibilidad = new bool[FFilas * FColumnas];
+            for (int fila = 0; fila < FFilas; fila++)
+            {
+                for (int columna = 0; columna < FColumnas; columna++)
+                {
+                    visibilidad[fila * FColumnas + columna] =
+                        !PadsOcultos.Contains(fila * FColumnas + columna);
+                }
+            }
+
+            return visibilidad;
+        }
+
+        public void EstableceVisibilidadPads(IReadOnlyList<bool> visibilidad)
+        {
+            if (visibilidad == null || visibilidad.Count != FFilas * FColumnas)
+            {
+                throw new ArgumentException("La cantidad de estados de los pads no coincide con las dimensiones de la máscara.", nameof(visibilidad));
+            }
+
+            PadsOcultos.Clear();
+            for (int indice = 0; indice < visibilidad.Count; indice++)
+            {
+                if (!visibilidad[indice])
+                {
+                    PadsOcultos.Add(indice);
+                }
+            }
+
+            Invalidate();
+        }
+
+        public void RestableceVisibilidadPads()
+        {
+            PadsOcultos.Clear();
+            Invalidate();
         }
 
         [Category("Cuadricula")]
@@ -485,19 +528,22 @@ namespace InfoRam
                 Cuadricula.Color = ColorCuadricula;
             }
             */
-            CMascaraChip mascara= new CMascaraChip();
             mascara.Filas = FFilas;
             mascara.Columnas = FColumnas;
             mascara.DiametroPad = 35;
             mascara.Zoom = Zoom;
-            mascara.PadVisible = indice => !PadsOcultos.Contains(indice);
+            mascara.PadVisible = EsPadVisible;
             Size tam = mascara.GetSize();
             Point origen = CalculaOrigenMascara(tam);
             mascara.X = origen.X;
             mascara.Y = origen.Y;
 
-            AutoScrollMinSize = new Size(mascara.X + tam.Width, mascara.Y + tam.Height);
-            ActualizaDesplazamiento();
+            if (tam != tamMascaraAnterior || origen != origenMascaraAnterior)
+            {
+                AutoScrollMinSize = new Size(mascara.X + tam.Width, mascara.Y + tam.Height);
+                tamMascaraAnterior = tam;
+                origenMascaraAnterior = origen;
+            }
 
             int anchoVisible = Math.Max(1, ClientSize.Width);
             int altoVisible = Math.Max(1, ClientSize.Height);
@@ -508,6 +554,11 @@ namespace InfoRam
 
             FGraphics.Clear(BackColor);
             mascara.Dibuja(FGraphics);
+        }
+
+        private bool EsPadVisible(int indice)
+        {
+            return !PadsOcultos.Contains(indice);
         }
         protected override void OnPaint(PaintEventArgs e)
         {

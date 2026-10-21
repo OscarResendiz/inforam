@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 
 namespace InfoRam.Dibujable
@@ -35,6 +36,8 @@ namespace InfoRam.Dibujable
             set;
         }
         public bool Visible { get; set; } = true;
+        public Font Fuente { get; set; }
+        public int Indice { get; set; }
 
         public bool Contiene(int x, int y)
         {
@@ -55,13 +58,12 @@ namespace InfoRam.Dibujable
             base.Dibuja(graphics);
             int diametroZoom = (int)(Diametro * Zoom);
             //obtengo las dimenciones del grafico
-            Pen pen = new Pen(Color.LightSlateGray);
-            graphics.FillEllipse(pen.Brush, X + diametroZoom / 4, Y + diametroZoom / 4, diametroZoom / 2, diametroZoom / 2);
+            graphics.FillEllipse(Brushes.LightSlateGray, X + diametroZoom / 4, Y + diametroZoom / 4, diametroZoom / 2, diametroZoom / 2);
             // dibujo el nombre del pad centrado en el pad
             if (!String.IsNullOrEmpty(Nombre))
             {
-                Font font = new Font("Arial", 6*Zoom);
-                graphics.DrawString(Nombre, font, Brushes.White, X + diametroZoom / 2 - graphics.MeasureString(Nombre, font).Width / 2, Y + diametroZoom / 2 - graphics.MeasureString(Nombre, font).Height / 2);
+                SizeF tamNombre = graphics.MeasureString(Nombre, Fuente);
+                graphics.DrawString(Nombre, Fuente, Brushes.White, X + diametroZoom / 2 - tamNombre.Width / 2, Y + diametroZoom / 2 - tamNombre.Height / 2);
             }
         }
 

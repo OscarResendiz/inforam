@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 
 namespace InfoRam.Dibujable
@@ -37,18 +38,45 @@ namespace InfoRam.Dibujable
             set;
         }
         public Func<int, bool> PadVisible { get; set; }
+        private readonly List<CPad> pads = new List<CPad>();
+        private Font fuentePad;
+        private int filasConfiguradas;
+        private int columnasConfiguradas;
+        private float zoomConfigurado;
+        private int diametroConfigurado;
 
         public override void Dibuja(MiGraphics graphics)
         {
             base.Dibuja(graphics);
             int diametroPad = (int)(DiametroPad * Zoom);
+            ActualizaPads(diametroPad);
             //dibujo el fondo de la mascara al tamaño que ocupan los pads
             graphics.FillRectangle(Brushes.DarkGreen, X, Y, Columnas * diametroPad, Filas * diametroPad);
-            Pen pen = new Pen(Color.LightSlateGray);
-            graphics.DrawRectangle(pen, X, Y, Columnas * diametroPad, Filas * diametroPad);
+            graphics.DrawRectangle(Pens.LightSlateGray, X, Y, Columnas * diametroPad, Filas * diametroPad);
+            foreach (CPad pad in pads)
+            {
+                pad.X = X + (pad.Indice % Columnas) * diametroPad;
+                pad.Y = Y + (pad.Indice / Columnas) * diametroPad;
+                pad.Visible = PadVisible == null || PadVisible(pad.Indice);
+                pad.Dibuja(graphics);
+            }
+            //dibuja un rectangulo con las dimensiones de la mascara
+        }
+
+        private void ActualizaPads(int diametroPad)
+        {
+            if (filasConfiguradas == Filas && columnasConfiguradas == Columnas &&
+                zoomConfigurado == Zoom && diametroConfigurado == DiametroPad)
+            {
+                return;
+            }
+
+            fuentePad?.Dispose();
+            fuentePad = new Font("Arial", 6 * Zoom);
+            pads.Clear();
+
             char letra = 'A';
             char letra2 = '\0';
-            //dibujo los pads de la mascara
             for (int i = 0; i < Filas; i++)
             {
                 letra = 'A';
@@ -62,17 +90,24 @@ namespace InfoRam.Dibujable
                         if (letra2 < 'A')
                             letra2 = 'A';
                     }
-                    CPad pad = new CPad();
-                    pad.X = X + j * diametroPad;
-                    pad.Y = Y + i * diametroPad;
-                    pad.Diametro = DiametroPad;
-                    pad.Zoom = Zoom;
-                    pad.Nombre = $"{letra2}{letra}{i}";
-                    pad.Visible = PadVisible == null || PadVisible(i * Columnas + j);
-                    pad.Dibuja(graphics);
+
+                    pads.Add(new CPad
+                    {
+                        Indice = i * Columnas + j,
+                        X = X + j * diametroPad,
+                        Y = Y + i * diametroPad,
+                        Diametro = DiametroPad,
+                        Zoom = Zoom,
+                        Nombre = $"{letra2}{letra}{i}",
+                        Fuente = fuentePad
+                    });
                 }
             }
-            //dibuja un rectangulo con las dimensiones de la mascara
+
+            filasConfiguradas = Filas;
+            columnasConfiguradas = Columnas;
+            zoomConfigurado = Zoom;
+            diametroConfigurado = DiametroPad;
         }
         public Size GetSize()
         {
