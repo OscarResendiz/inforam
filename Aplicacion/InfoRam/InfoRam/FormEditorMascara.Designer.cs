@@ -49,7 +49,6 @@
             ((System.ComponentModel.ISupportInitialize)TFilas).BeginInit();
             toolStrip1.SuspendLayout();
             PanelMascara.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)controlDibujable1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -221,7 +220,6 @@
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
             PanelMascara.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)controlDibujable1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }

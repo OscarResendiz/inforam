@@ -56,6 +56,8 @@ namespace InfoRam
         /// </summary>
         public void Redimenciona(int width, int height)
         {
+            if (height == 0 || width == 0)
+                return;
             FHeight = height;
             FWidth = width;
             FBitmap = new Bitmap(FWidth, FHeight);
@@ -3220,7 +3222,7 @@ namespace InfoRam
         //     El valor de brush es null. O bien El valor de s es null.
         public void DrawString(string s, Font font, Brush brush, float x, float y, StringFormat format)
         {
-            FGraphics.DrawString(s, font, brush, x, y, format);
+            FGraphics.DrawString(s, font, brush, x - DesplazamientoH, y - DesplazamientoV, format);
         }
         //
         // Resumen:
@@ -3246,6 +3248,8 @@ namespace InfoRam
         //     El valor de brush es null. O bien El valor de s es null.
         public void DrawString(string s, Font font, Brush brush, PointF point)
         {
+            point.X -= DesplazamientoH;
+            point.Y -= DesplazamientoV;
             FGraphics.DrawString(s, font, brush, point);
         }
         //
@@ -3274,7 +3278,7 @@ namespace InfoRam
         //     El valor de brush es null. O bien El valor de s es null.
         public void DrawString(string s, Font font, Brush brush, float x, float y)
         {
-            FGraphics.DrawString(s, font, brush, x, y);
+            FGraphics.DrawString(s, font, brush, x - DesplazamientoH, y - DesplazamientoV);
         }
         //
         // Resumen:

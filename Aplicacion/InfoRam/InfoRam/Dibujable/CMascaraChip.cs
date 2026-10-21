@@ -36,6 +36,8 @@ namespace InfoRam.Dibujable
             get;
             set;
         }
+        public Func<int, bool> PadVisible { get; set; }
+
         public override void Dibuja(MiGraphics graphics)
         {
             base.Dibuja(graphics);
@@ -66,10 +68,16 @@ namespace InfoRam.Dibujable
                     pad.Diametro = DiametroPad;
                     pad.Zoom = Zoom;
                     pad.Nombre = $"{letra2}{letra}{i}";
+                    pad.Visible = PadVisible == null || PadVisible(i * Columnas + j);
                     pad.Dibuja(graphics);
                 }
             }
             //dibuja un rectangulo con las dimensiones de la mascara
+        }
+        public Size GetSize()
+        {
+            int diametroPad = (int)(DiametroPad * Zoom);
+            return new Size(Columnas * diametroPad, Filas * diametroPad);
         }
     }
 }

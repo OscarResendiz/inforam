@@ -3,24 +3,42 @@
   "WorkspaceRootPath": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|d:\\repositoriosgit\\inforam\\aplicacion\\inforam\\inforam\\formeditormascara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\formeditormascara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\.copilot\\plans\\plan-visibilidad-interactiva-de-los-pads.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|d:\\repositoriosgit\\inforam\\aplicacion\\inforam\\inforam\\formeditormascara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\formeditormascara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|d:\\repositoriosgit\\inforam\\aplicacion\\inforam\\inforam\\formeditormascara.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\formeditormascara.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|d:\\repositoriosgit\\inforam\\aplicacion\\inforam\\inforam\\dibujable\\controldibujable.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\dibujable\\controldibujable.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|d:\\repositoriosgit\\inforam\\aplicacion\\inforam\\inforam\\migraphics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\migraphics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\.copilot\\plans\\plan-aadir-desplazamiento-a-controldibujable.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
     },
     {
       "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|d:\\repositoriosgit\\inforam\\aplicacion\\inforam\\inforam\\dibujable\\controldibujable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\dibujable\\controldibujable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|d:\\repositoriosgit\\inforam\\aplicacion\\inforam\\inforam\\dibujable\\cpad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\dibujable\\cpad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|d:\\repositoriosgit\\inforam\\aplicacion\\inforam\\inforam\\formeditormascara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\formeditormascara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\inforam\\formeditormascara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\formeditormascara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|d:\\repositoriosgit\\inforam\\aplicacion\\inforam\\inforam\\dibujable\\cmascarachip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\dibujable\\cmascarachip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|d:\\repositoriosgit\\inforam\\aplicacion\\inforam\\inforam\\dibujable\\cpad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\dibujable\\cpad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|d:\\repositoriosgit\\inforam\\aplicacion\\inforam\\inforam\\dibujable\\cdibujable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,58 +57,117 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FormEditorMascara.cs",
-              "DocumentMoniker": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorMascara.cs",
-              "RelativeDocumentMoniker": "InfoRam\\FormEditorMascara.cs",
-              "ToolTip": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorMascara.cs",
-              "RelativeToolTip": "InfoRam\\FormEditorMascara.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAtwDQAAAAKAAAAAAAAAA==",
+              "Title": "plan-visibilidad-interactiva-de-los-pads.md [Versi\u00F3n preliminar]",
+              "DocumentMoniker": "C:\\Users\\USER\\.copilot\\plans\\plan-visibilidad-interactiva-de-los-pads.md",
+              "ToolTip": "C:\\Users\\USER\\.copilot\\plans\\plan-visibilidad-interactiva-de-los-pads.md [Versi\u00F3n preliminar]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-10-21T07:54:47.224Z",
+              "EditorCaption": " [Versi\u00F3n preliminar]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MiGraphics.cs",
+              "DocumentMoniker": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\MiGraphics.cs",
+              "RelativeDocumentMoniker": "InfoRam\\MiGraphics.cs",
+              "ToolTip": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\MiGraphics.cs",
+              "RelativeToolTip": "InfoRam\\MiGraphics.cs",
+              "ViewState": "AgIAAL4MAAAAAAAAAAAAADsAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T07:03:51.577Z",
+              "WhenOpened": "2026-10-21T07:39:22.29Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "CMascaraChip.cs",
-              "DocumentMoniker": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\CMascaraChip.cs",
-              "RelativeDocumentMoniker": "InfoRam\\Dibujable\\CMascaraChip.cs",
-              "ToolTip": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\CMascaraChip.cs",
-              "RelativeToolTip": "InfoRam\\Dibujable\\CMascaraChip.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAAAEAAAAAvAAAAAAAAAA==",
+              "Title": "plan-aadir-desplazamiento-a-controldibujable.md [Versi\u00F3n preliminar]",
+              "DocumentMoniker": "C:\\Users\\USER\\.copilot\\plans\\plan-aadir-desplazamiento-a-controldibujable.md",
+              "ToolTip": "C:\\Users\\USER\\.copilot\\plans\\plan-aadir-desplazamiento-a-controldibujable.md [Versi\u00F3n preliminar]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-10-21T07:38:20.981Z",
+              "EditorCaption": " [Versi\u00F3n preliminar]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormEditorMascara.Designer.cs",
+              "DocumentMoniker": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorMascara.Designer.cs",
+              "RelativeDocumentMoniker": "InfoRam\\FormEditorMascara.Designer.cs",
+              "ToolTip": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorMascara.Designer.cs",
+              "RelativeToolTip": "InfoRam\\FormEditorMascara.Designer.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T06:11:27.031Z",
+              "WhenOpened": "2026-10-21T07:37:55.198Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "ControlDibujable.Designer.cs",
+              "DocumentMoniker": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\ControlDibujable.Designer.cs",
+              "RelativeDocumentMoniker": "InfoRam\\Dibujable\\ControlDibujable.Designer.cs",
+              "ToolTip": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\ControlDibujable.Designer.cs",
+              "RelativeToolTip": "InfoRam\\Dibujable\\ControlDibujable.Designer.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T07:37:55.111Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ControlDibujable.cs",
               "DocumentMoniker": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\ControlDibujable.cs",
               "RelativeDocumentMoniker": "InfoRam\\Dibujable\\ControlDibujable.cs",
               "ToolTip": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\ControlDibujable.cs",
               "RelativeToolTip": "InfoRam\\Dibujable\\ControlDibujable.cs",
-              "ViewState": "AgIAAIoBAAAAAAAAAAAuwKQBAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAP0BAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-21T06:07:32.5Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
+              "Title": "CMascaraChip.cs",
+              "DocumentMoniker": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\CMascaraChip.cs",
+              "RelativeDocumentMoniker": "InfoRam\\Dibujable\\CMascaraChip.cs",
+              "ToolTip": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\CMascaraChip.cs",
+              "RelativeToolTip": "InfoRam\\Dibujable\\CMascaraChip.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAADgv1AAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T06:11:27.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormEditorMascara.cs",
+              "DocumentMoniker": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorMascara.cs",
+              "RelativeDocumentMoniker": "InfoRam\\FormEditorMascara.cs",
+              "ToolTip": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorMascara.cs",
+              "RelativeToolTip": "InfoRam\\FormEditorMascara.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T07:03:51.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "CPad.cs",
               "DocumentMoniker": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\CPad.cs",
               "RelativeDocumentMoniker": "InfoRam\\Dibujable\\CPad.cs",
               "ToolTip": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\CPad.cs",
               "RelativeToolTip": "InfoRam\\Dibujable\\CPad.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAIwC8AAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAIBJwD4AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-21T05:56:26.127Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "CDibujable.cs",
               "DocumentMoniker": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\CDibujable.cs",
               "RelativeDocumentMoniker": "InfoRam\\Dibujable\\CDibujable.cs",
@@ -98,12 +175,11 @@
               "RelativeToolTip": "InfoRam\\Dibujable\\CDibujable.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T06:05:39.724Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-21T06:05:39.724Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "FormEditorMascara.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorMascara.cs",
               "RelativeDocumentMoniker": "InfoRam\\FormEditorMascara.cs",

@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -46,7 +45,6 @@
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ControlDibujable_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ControlDibujable_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.ControlDibujable_MouseUp);
-            ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
 
         }

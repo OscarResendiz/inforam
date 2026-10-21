@@ -34,9 +34,24 @@ namespace InfoRam.Dibujable
             get;
             set;
         }
+        public bool Visible { get; set; } = true;
+
+        public bool Contiene(int x, int y)
+        {
+            int diametroZoom = (int)(Diametro * Zoom);
+            return diametroZoom > 0 &&
+                x >= X && x < X + diametroZoom &&
+                y >= Y && y < Y + diametroZoom;
+        }
+
         //dibuja un circulo en el centro del pad
         public virtual void Dibuja(MiGraphics graphics)
         {
+            if (!Visible)
+            {
+                return;
+            }
+
             base.Dibuja(graphics);
             int diametroZoom = (int)(Diametro * Zoom);
             //obtengo las dimenciones del grafico

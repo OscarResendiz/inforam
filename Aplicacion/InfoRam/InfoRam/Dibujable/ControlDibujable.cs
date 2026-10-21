@@ -11,16 +11,17 @@ using System.Windows.Forms;
 namespace InfoRam
 {
 
-    public partial class ControlDibujable : PictureBox
+    public partial class ControlDibujable : ScrollableControl
     {
         private int FFilas= 10;
         private float FZoom = 1.0f;
         private int FColumnas = 10;
         CObjetoDibujable TieneRaton;
-        private int Desplazamiento = 30;
+        private int Desplazamiento = 1;
         private int FHScroolValue;
         private int FVScroolValue;
         private List<CObjetoDibujable> Controles;
+        private readonly HashSet<int> PadsOcultos = new HashSet<int>();
         private Brush BakBrush;
 //        Modelo.ModeloDatos FModelo;
         private MiGraphics FGraphics;
@@ -139,6 +140,10 @@ namespace InfoRam
             }
             set
             {
+                if (value <= 0)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(value), "El zoom debe ser mayor que cero.");
+                }
                 FZoom = value;
                 Invalidate();
             }
@@ -159,6 +164,8 @@ namespace InfoRam
             BakBrush = new SolidBrush(BackColor);
             AnchoCuadricula = 50;
             FHScroolValue = 0;
+            FVScroolValue = 0;
+            AutoScroll = true;
             this.DoubleBuffered = true;
             this.SetStyle(ControlStyles.UserPaint |
               ControlStyles.AllPaintingInWmPaint |
@@ -197,13 +204,10 @@ namespace InfoRam
             }
             set
             {
-                FHScroolValue = value;
-                if (FGraphics != null)
-                {
-                    FGraphics.HScroolValue = FHScroolValue;
-                    FGraphics.Desplazamiento = Desplazamiento;
-                }
-                Invalidate();
+                value = Math.Max(0, value);
+                Point posicion = AutoScrollPosition;
+                AutoScrollPosition = new Point(value, -posicion.Y);
+                ActualizaDesplazamiento();
             }
         }
         /// <summary>
@@ -219,14 +223,44 @@ namespace InfoRam
             }
             set
             {
-                FVScroolValue = value;
-                if (FGraphics != null)
-                {
-                    FGraphics.VScroolValue = FVScroolValue;
-                    FGraphics.Desplazamiento = Desplazamiento;
-                }
-                Invalidate();
+                value = Math.Max(0, value);
+                Point posicion = AutoScrollPosition;
+                AutoScrollPosition = new Point(-posicion.X, value);
+                ActualizaDesplazamiento();
             }
+        }
+
+        private void ActualizaDesplazamiento()
+        {
+            Point posicion = AutoScrollPosition;
+            FHScroolValue = Math.Max(0, -posicion.X);
+            FVScroolValue = Math.Max(0, -posicion.Y);
+
+            if (FGraphics != null)
+            {
+                FGraphics.Desplazamiento = Desplazamiento;
+                FGraphics.HScroolValue = FHScroolValue;
+                FGraphics.VScroolValue = FVScroolValue;
+            }
+
+            Invalidate();
+        }
+
+        protected override void OnScroll(ScrollEventArgs se)
+        {
+            base.OnScroll(se);
+            ActualizaDesplazamiento();
+        }
+
+        protected override void OnMouseWheel(MouseEventArgs e)
+        {
+            if ((ModifierKeys & Keys.Control) == Keys.Control && e.Delta != 0)
+            {
+                Zoom = Math.Max(0.1f, Zoom + Math.Sign(e.Delta) * 0.1f);
+                return;
+            }
+
+            base.OnMouseWheel(e);
         }
         /// <summary>
         /// agrega el objeto al control de los eventos del raton
@@ -379,6 +413,11 @@ namespace InfoRam
             int mx = e.Location.X + (FHScroolValue * Desplazamiento);
             int my = e.Location.Y + (FVScroolValue * Desplazamiento);
 
+            if (e.Button == MouseButtons.Left && AlternaVisibilidadPad(mx, my))
+            {
+                return;
+            }
+
             for (int i = Controles.Count - 1; i > 0; i--)
             {
                 CObjetoDibujable obj = Controles[i];
@@ -394,9 +433,46 @@ namespace InfoRam
                 }
             }
         }
+
+        private bool AlternaVisibilidadPad(int x, int y)
+        {
+            const int diametroPad = 35;
+            int diametroZoom = (int)(diametroPad * Zoom);
+            Size tamMascara = new Size(FColumnas * diametroZoom, FFilas * diametroZoom);
+            Point origen = CalculaOrigenMascara(tamMascara);
+
+            if (diametroZoom <= 0 || x < origen.X || y < origen.Y)
+            {
+                return false;
+            }
+
+            int columna = (x - origen.X) / diametroZoom;
+            int fila = (y - origen.Y) / diametroZoom;
+            if (columna < 0 || columna >= FColumnas || fila < 0 || fila >= FFilas)
+            {
+                return false;
+            }
+
+            int indice = fila * FColumnas + columna;
+            if (!PadsOcultos.Add(indice))
+            {
+                PadsOcultos.Remove(indice);
+            }
+
+            Invalidate();
+            return true;
+        }
+
+        private Point CalculaOrigenMascara(Size tamMascara)
+        {
+            int origenX = Math.Max(10, (ClientSize.Width - tamMascara.Width) / 2);
+            int origenY = Math.Max(10, (ClientSize.Height - tamMascara.Height) / 2);
+            return new Point(origenX, origenY);
+        }
         #endregion
         private void Dibuja()
         {
+            /*
             if (FGraphics.Width != Width || FGraphics.Height != Height || Cuadricula.Visible != MostrarCuadricula || Cuadricula.AnchoCuadricula != AnchoCuadricula || Cuadricula.Color != ColorCuadricula)
             {
                 BakBrush = new SolidBrush(BackColor);
@@ -408,22 +484,29 @@ namespace InfoRam
                 Cuadricula.AnchoCuadricula = AnchoCuadricula;
                 Cuadricula.Color = ColorCuadricula;
             }
-            FGraphics.Clear(BackColor);
-            Cuadricula.Dibuja(FGraphics);
-            //dibujo un pad 
-            //            CPad pad = new CPad();
-            //          pad.Diametro = 50;
-            //        pad.Nombre = "A1";
-            //      pad.X = 100;
-            //    pad.Y = 100;
-            //  pad.Dibuja(FGraphics);
+            */
             CMascaraChip mascara= new CMascaraChip();
-            mascara.X = 10;
-            mascara.Y = 10;
             mascara.Filas = FFilas;
             mascara.Columnas = FColumnas;
             mascara.DiametroPad = 35;
             mascara.Zoom = Zoom;
+            mascara.PadVisible = indice => !PadsOcultos.Contains(indice);
+            Size tam = mascara.GetSize();
+            Point origen = CalculaOrigenMascara(tam);
+            mascara.X = origen.X;
+            mascara.Y = origen.Y;
+
+            AutoScrollMinSize = new Size(mascara.X + tam.Width, mascara.Y + tam.Height);
+            ActualizaDesplazamiento();
+
+            int anchoVisible = Math.Max(1, ClientSize.Width);
+            int altoVisible = Math.Max(1, ClientSize.Height);
+            if (FGraphics.Width != anchoVisible || FGraphics.Height != altoVisible)
+            {
+                FGraphics.Redimenciona(anchoVisible, altoVisible);
+            }
+
+            FGraphics.Clear(BackColor);
             mascara.Dibuja(FGraphics);
         }
         protected override void OnPaint(PaintEventArgs e)
