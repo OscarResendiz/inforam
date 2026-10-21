@@ -6,5 +6,11 @@ namespace InfoRam
         {
             InitializeComponent();
         }
+
+        private void editorDeMascarasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormEditorMascara form=new FormEditorMascara();
+            form.ShowDialog();
+        }
     }
 }

@@ -28,12 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
+            menuStrip1 = new MenuStrip();
+            ménuToolStripMenuItem = new ToolStripMenuItem();
+            editorDeMascarasToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
+            SuspendLayout();
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new ToolStripItem[] { ménuToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.TabIndex = 0;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // ménuToolStripMenuItem
+            // 
+            ménuToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { editorDeMascarasToolStripMenuItem });
+            ménuToolStripMenuItem.Name = "ménuToolStripMenuItem";
+            ménuToolStripMenuItem.Size = new Size(50, 20);
+            ménuToolStripMenuItem.Text = "Ménu";
+            // 
+            // editorDeMascarasToolStripMenuItem
+            // 
+            editorDeMascarasToolStripMenuItem.Name = "editorDeMascarasToolStripMenuItem";
+            editorDeMascarasToolStripMenuItem.Size = new Size(180, 22);
+            editorDeMascarasToolStripMenuItem.Text = "Editor de mascaras";
+            editorDeMascarasToolStripMenuItem.Click += editorDeMascarasToolStripMenuItem_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
+            Name = "Form1";
             Text = "Form1";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem ménuToolStripMenuItem;
+        private ToolStripMenuItem editorDeMascarasToolStripMenuItem;
     }
 }

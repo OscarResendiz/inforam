@@ -1,10 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\",
+  "WorkspaceRootPath": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EEB9F92A-A4C0-4E6E-BF78-F10B1B1213C5}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EEB9F92A-A4C0-4E6E-BF78-F10B1B1213C5}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|d:\\repositoriosgit\\inforam\\aplicacion\\inforam\\inforam\\formeditormascara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\formeditormascara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|d:\\repositoriosgit\\inforam\\aplicacion\\inforam\\inforam\\formeditormascara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\formeditormascara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|d:\\repositoriosgit\\inforam\\aplicacion\\inforam\\inforam\\dibujable\\controldibujable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\dibujable\\controldibujable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|d:\\repositoriosgit\\inforam\\aplicacion\\inforam\\inforam\\dibujable\\cpad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\dibujable\\cpad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|d:\\repositoriosgit\\inforam\\aplicacion\\inforam\\inforam\\dibujable\\cmascarachip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\dibujable\\cmascarachip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|d:\\repositoriosgit\\inforam\\aplicacion\\inforam\\inforam\\dibujable\\cdibujable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\dibujable\\cdibujable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,13 +39,78 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Form1.cs",
-              "RelativeDocumentMoniker": "InfoRam\\Form1.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "InfoRam\\Form1.cs [Dise\u00F1o]",
+              "Title": "FormEditorMascara.cs",
+              "DocumentMoniker": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorMascara.cs",
+              "RelativeDocumentMoniker": "InfoRam\\FormEditorMascara.cs",
+              "ToolTip": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorMascara.cs",
+              "RelativeToolTip": "InfoRam\\FormEditorMascara.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAtwDQAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-20T23:01:03.661Z",
+              "WhenOpened": "2026-10-21T07:03:51.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CMascaraChip.cs",
+              "DocumentMoniker": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\CMascaraChip.cs",
+              "RelativeDocumentMoniker": "InfoRam\\Dibujable\\CMascaraChip.cs",
+              "ToolTip": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\CMascaraChip.cs",
+              "RelativeToolTip": "InfoRam\\Dibujable\\CMascaraChip.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAAAEAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T06:11:27.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ControlDibujable.cs",
+              "DocumentMoniker": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\ControlDibujable.cs",
+              "RelativeDocumentMoniker": "InfoRam\\Dibujable\\ControlDibujable.cs",
+              "ToolTip": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\ControlDibujable.cs",
+              "RelativeToolTip": "InfoRam\\Dibujable\\ControlDibujable.cs",
+              "ViewState": "AgIAAIoBAAAAAAAAAAAuwKQBAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T06:07:32.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CPad.cs",
+              "DocumentMoniker": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\CPad.cs",
+              "RelativeDocumentMoniker": "InfoRam\\Dibujable\\CPad.cs",
+              "ToolTip": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\CPad.cs",
+              "RelativeToolTip": "InfoRam\\Dibujable\\CPad.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAIwC8AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T05:56:26.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CDibujable.cs",
+              "DocumentMoniker": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\CDibujable.cs",
+              "RelativeDocumentMoniker": "InfoRam\\Dibujable\\CDibujable.cs",
+              "ToolTip": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\CDibujable.cs",
+              "RelativeToolTip": "InfoRam\\Dibujable\\CDibujable.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T06:05:39.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormEditorMascara.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorMascara.cs",
+              "RelativeDocumentMoniker": "InfoRam\\FormEditorMascara.cs",
+              "ToolTip": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorMascara.cs [Dise\u00F1o]",
+              "RelativeToolTip": "InfoRam\\FormEditorMascara.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T03:21:13.374Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]
