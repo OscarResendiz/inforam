@@ -1,0 +1,114 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace InfoRam.EditorChip
+{
+    public partial class CChip2 : UserControl
+    {
+        private int filas = 10;
+        private int columnas = 10;
+
+        public CChip2()
+        {
+            InitializeComponent();
+            ConfiguraGrids();
+        }
+
+        [Category("Cuadrícula")]
+        [Description("Número de filas de los grids.")]
+        [DefaultValue(10)]
+        public int Filas
+        {
+            get => filas;
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(value), "El número de filas debe ser mayor que cero.");
+                }
+
+                if (filas == value)
+                {
+                    return;
+                }
+
+                filas = value;
+                ConfiguraGrids();
+            }
+        }
+
+        [Category("Cuadrícula")]
+        [Description("Número de columnas de los grids.")]
+        [DefaultValue(10)]
+        public int Columnas
+        {
+            get => columnas;
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(value), "El número de columnas debe ser mayor que cero.");
+                }
+
+                if (columnas == value)
+                {
+                    return;
+                }
+
+                columnas = value;
+                ConfiguraGrids();
+            }
+        }
+
+        private void ConfiguraGrids()
+        {
+            ConfiguraGrid(gridDiodos);
+            ConfiguraGrid(gridVoltajes);
+        }
+
+        private void ConfiguraGrid(DataGridView grid)
+        {
+            grid.Columns.Clear();
+            grid.Rows.Clear();
+
+            for (int columna = 0; columna < columnas; columna++)
+            {
+                grid.Columns.Add(new DataGridViewTextBoxColumn
+                {
+                    Name = NombreColumna(columna),
+                    HeaderText = NombreColumna(columna),
+                    SortMode = DataGridViewColumnSortMode.NotSortable
+                });
+            }
+
+            grid.Rows.Add(filas);
+            for (int fila = 0; fila < filas; fila++)
+            {
+                grid.Rows[fila].HeaderCell.Value = fila.ToString();
+            }
+
+            grid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            grid.RowHeadersVisible = true;
+        }
+
+        private static string NombreColumna(int indice)
+        {
+            string nombre = string.Empty;
+            int valor = indice + 1;
+
+            while (valor > 0)
+            {
+                valor--;
+                nombre = (char)('A' + valor % 26) + nombre;
+                valor /= 26;
+            }
+
+            return nombre;
+        }
+    }
+}

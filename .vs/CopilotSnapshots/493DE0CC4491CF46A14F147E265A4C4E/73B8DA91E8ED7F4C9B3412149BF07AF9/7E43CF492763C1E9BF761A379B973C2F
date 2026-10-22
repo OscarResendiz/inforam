@@ -1,0 +1,68 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace InfoRam.EditorChip
+{
+    public partial class CChip2 : UserControl
+    {
+        private int filas = 10;
+        private int columnas = 10;
+
+        public CChip2()
+        {
+            InitializeComponent();
+            ConfiguraGrids();
+        }
+
+        [Category("Cuadrícula")]
+        [Description("Número de filas de los grids.")]
+        [DefaultValue(10)]
+        public int Filas
+        {
+            get => filas;
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(value), "El número de filas debe ser mayor que cero.");
+                }
+
+                if (filas == value)
+                {
+                    return;
+                }
+
+                filas = value;
+                ConfiguraGrids();
+            }
+        }
+
+        [Category("Cuadrícula")]
+        [Description("Número de columnas de los grids.")]
+        [DefaultValue(10)]
+        public int Columnas
+        {
+            get => columnas;
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(value), "El número de columnas debe ser mayor que cero.");
+                }
+
+                if (columnas == value)
+                {
+                    return;
+                }
+
+                columnas = value;
+                ConfiguraGrids();
+            }
+        }
+    }
+}

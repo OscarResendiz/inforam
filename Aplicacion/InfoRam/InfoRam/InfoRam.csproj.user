@@ -4,7 +4,19 @@
     <Compile Update="Dibujable\ControlDibujable.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Update="EditorChip\CChip.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="EditorChip\CChip2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="EditorChip\CPadEditable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormEditorChip.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormEditorMascara.cs">

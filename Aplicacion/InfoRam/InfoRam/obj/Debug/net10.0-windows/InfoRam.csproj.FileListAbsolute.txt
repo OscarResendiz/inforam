@@ -36,3 +36,11 @@ D:\RepositoriosGit\inforam\Aplicacion\InfoRam\InfoRam\obj\Debug\net10.0-windows\
 D:\RepositoriosGit\inforam\Aplicacion\InfoRam\InfoRam\obj\Debug\net10.0-windows\ref\InfoRam.dll
 D:\RepositoriosGit\inforam\Aplicacion\InfoRam\InfoRam\obj\Debug\net10.0-windows\InfoRam.csproj.Up2Date
 D:\RepositoriosGit\inforam\Aplicacion\InfoRam\InfoRam\obj\Debug\net10.0-windows\InfoRam.ControlDibujable.resources
+C:\Oscar\Repositorios\inforam\Aplicacion\InfoRam\InfoRam\obj\Debug\net10.0-windows\InfoRam.ControlDibujable.resources
+C:\Oscar\Repositorios\inforam\Aplicacion\InfoRam\InfoRam\obj\Debug\net10.0-windows\InfoRam.FormEditorMascara.resources
+C:\Oscar\Repositorios\inforam\Aplicacion\InfoRam\InfoRam\obj\Debug\net10.0-windows\InfoRam.Properties.Resources.resources
+C:\Oscar\Repositorios\inforam\Aplicacion\InfoRam\InfoRam\obj\Debug\net10.0-windows\InfoRam.sourcelink.json
+C:\Oscar\Repositorios\inforam\Aplicacion\InfoRam\InfoRam\obj\Debug\net10.0-windows\InfoRam.EditorChip.CChip.resources
+C:\Oscar\Repositorios\inforam\Aplicacion\InfoRam\InfoRam\obj\Debug\net10.0-windows\InfoRam.EditorChip.CPadEditable.resources
+C:\Oscar\Repositorios\inforam\Aplicacion\InfoRam\InfoRam\obj\Debug\net10.0-windows\InfoRam.FormEditorChip.resources
+C:\Oscar\Repositorios\inforam\Aplicacion\InfoRam\InfoRam\obj\Debug\net10.0-windows\InfoRam.EditorChip.CChip2.resources

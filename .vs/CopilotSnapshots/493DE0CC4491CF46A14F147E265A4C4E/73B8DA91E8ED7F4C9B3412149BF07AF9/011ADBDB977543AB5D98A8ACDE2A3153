@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace InfoRam.EditorChip
+{
+    public partial class CChip2 : UserControl
+    {
+        public CChip2()
+        {
+            InitializeComponent();
+        }
+    }
+}

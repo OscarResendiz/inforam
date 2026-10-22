@@ -31,6 +31,7 @@
             menuStrip1 = new MenuStrip();
             ménuToolStripMenuItem = new ToolStripMenuItem();
             editorDeMascarasToolStripMenuItem = new ToolStripMenuItem();
+            editorDeChipsToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -45,7 +46,7 @@
             // 
             // ménuToolStripMenuItem
             // 
-            ménuToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { editorDeMascarasToolStripMenuItem });
+            ménuToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { editorDeMascarasToolStripMenuItem, editorDeChipsToolStripMenuItem });
             ménuToolStripMenuItem.Name = "ménuToolStripMenuItem";
             ménuToolStripMenuItem.Size = new Size(50, 20);
             ménuToolStripMenuItem.Text = "Ménu";
@@ -56,6 +57,13 @@
             editorDeMascarasToolStripMenuItem.Size = new Size(180, 22);
             editorDeMascarasToolStripMenuItem.Text = "Editor de mascaras";
             editorDeMascarasToolStripMenuItem.Click += editorDeMascarasToolStripMenuItem_Click;
+            // 
+            // editorDeChipsToolStripMenuItem
+            // 
+            editorDeChipsToolStripMenuItem.Name = "editorDeChipsToolStripMenuItem";
+            editorDeChipsToolStripMenuItem.Size = new Size(180, 22);
+            editorDeChipsToolStripMenuItem.Text = "Editor de Chips";
+            editorDeChipsToolStripMenuItem.Click += editorDeChipsToolStripMenuItem_Click;
             // 
             // Form1
             // 
@@ -77,5 +85,6 @@
         private MenuStrip menuStrip1;
         private ToolStripMenuItem ménuToolStripMenuItem;
         private ToolStripMenuItem editorDeMascarasToolStripMenuItem;
+        private ToolStripMenuItem editorDeChipsToolStripMenuItem;
     }
 }
