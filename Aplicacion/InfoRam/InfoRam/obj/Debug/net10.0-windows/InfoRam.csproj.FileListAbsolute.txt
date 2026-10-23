@@ -44,3 +44,4 @@ C:\Oscar\Repositorios\inforam\Aplicacion\InfoRam\InfoRam\obj\Debug\net10.0-windo
 C:\Oscar\Repositorios\inforam\Aplicacion\InfoRam\InfoRam\obj\Debug\net10.0-windows\InfoRam.EditorChip.CPadEditable.resources
 C:\Oscar\Repositorios\inforam\Aplicacion\InfoRam\InfoRam\obj\Debug\net10.0-windows\InfoRam.FormEditorChip.resources
 C:\Oscar\Repositorios\inforam\Aplicacion\InfoRam\InfoRam\obj\Debug\net10.0-windows\InfoRam.EditorChip.CChip2.resources
+C:\Oscar\Repositorios\inforam\Aplicacion\InfoRam\InfoRam\obj\Debug\net10.0-windows\InfoRam.EditorChip.CChip3.resources

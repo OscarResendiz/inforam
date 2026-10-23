@@ -51,9 +51,9 @@ namespace InfoRam
                 MascaraArchivo? mascara = JsonSerializer.Deserialize<MascaraArchivo>(contenido);
                 bool[] visibilidad = ValidaMascara(mascara);
 
-                cChip21.Filas = mascara!.Filas;
-                cChip21.Columnas = mascara.Columnas;
-                cChip21.EstableceVisibilidadCeldas(visibilidad);
+                cChip31.Filas = mascara!.Filas;
+                cChip31.Columnas = mascara.Columnas;
+                cChip31.EstableceVisibilidadPads(visibilidad);
             }
             catch (Exception excepcion) when (excepcion is IOException ||
                                                excepcion is JsonException ||

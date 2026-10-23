@@ -3,100 +3,12 @@
   "WorkspaceRootPath": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Oscar\\.copilot\\plans\\plan-cargar-mscaras-desde-btnselmascara-en-formeditorchip.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\formeditorchip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\formeditorchip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\editorchip\\cchip2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\editorchip\\cchip2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\editorchip\\cchip2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\editorchip\\cchip2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Oscar\\.copilot\\plans\\plan-aadir-pestaas-y-grids-configurables-a-cchip2.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\formeditormascara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\formeditormascara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\inforam\\formeditormascara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\formeditormascara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\editorchip\\cpadeditable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\editorchip\\cpadeditable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\editorchip\\cchip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\editorchip\\cchip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\dibujable\\cmascarachip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\dibujable\\cmascarachip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\editorchip\\cchip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\editorchip\\cchip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\editorchip\\cpadeditable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\editorchip\\cpadeditable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\migraphics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\migraphics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\.copilot\\plans\\plan-guardar-y-abrir-mscaras-json.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\USER\\.copilot\\plans\\plan-aadir-desplazamiento-a-controldibujable.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\formeditormascara.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\formeditormascara.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\dibujable\\controldibujable.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\dibujable\\controldibujable.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\editorchip\\cchip3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\editorchip\\cchip3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\dibujable\\cpad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\dibujable\\cpad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\dibujable\\cdibujable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\dibujable\\cdibujable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\dibujable\\controldibujable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\dibujable\\controldibujable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\editorchip\\cchip2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\editorchip\\cchip2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\formeditorchip.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\formeditorchip.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\formeditorchip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\formeditorchip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,319 +18,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "FormEditorChip.cs",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorChip.cs",
-              "RelativeDocumentMoniker": "InfoRam\\FormEditorChip.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorChip.cs",
-              "RelativeToolTip": "InfoRam\\FormEditorChip.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAEBTwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-22T00:43:40.426Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "FormEditorChip.Designer.cs",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorChip.Designer.cs",
-              "RelativeDocumentMoniker": "InfoRam\\FormEditorChip.Designer.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorChip.Designer.cs",
-              "RelativeToolTip": "InfoRam\\FormEditorChip.Designer.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-22T00:43:28.973Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Form1.cs",
-              "RelativeDocumentMoniker": "InfoRam\\Form1.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Form1.cs",
-              "RelativeToolTip": "InfoRam\\Form1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAvwBIAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-22T00:41:34.422Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Form1.cs",
-              "RelativeDocumentMoniker": "InfoRam\\Form1.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "InfoRam\\Form1.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-22T00:41:22.157Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "plan-cargar-mscaras-desde-btnselmascara-en-formeditorchip.md [Versi\u00F3n preliminar]",
-              "DocumentMoniker": "C:\\Users\\Oscar\\.copilot\\plans\\plan-cargar-mscaras-desde-btnselmascara-en-formeditorchip.md",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Users\\Oscar\\.copilot\\plans\\plan-cargar-mscaras-desde-btnselmascara-en-formeditorchip.md",
-              "ToolTip": "C:\\Users\\Oscar\\.copilot\\plans\\plan-cargar-mscaras-desde-btnselmascara-en-formeditorchip.md [Versi\u00F3n preliminar]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Users\\Oscar\\.copilot\\plans\\plan-cargar-mscaras-desde-btnselmascara-en-formeditorchip.md [Versi\u00F3n preliminar]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-10-22T00:40:41.527Z",
-              "EditorCaption": " [Versi\u00F3n preliminar]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CChip2.cs",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\EditorChip\\CChip2.cs",
-              "RelativeDocumentMoniker": "InfoRam\\EditorChip\\CChip2.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\EditorChip\\CChip2.cs",
-              "RelativeToolTip": "InfoRam\\EditorChip\\CChip2.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAvwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-22T00:12:44.366Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "CChip2.Designer.cs",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\EditorChip\\CChip2.Designer.cs",
-              "RelativeDocumentMoniker": "InfoRam\\EditorChip\\CChip2.Designer.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\EditorChip\\CChip2.Designer.cs",
-              "RelativeToolTip": "InfoRam\\EditorChip\\CChip2.Designer.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-22T00:12:33.186Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "plan-aadir-pestaas-y-grids-configurables-a-cchip2.md [Versi\u00F3n preliminar]",
-              "DocumentMoniker": "C:\\Users\\Oscar\\.copilot\\plans\\plan-aadir-pestaas-y-grids-configurables-a-cchip2.md",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Users\\Oscar\\.copilot\\plans\\plan-aadir-pestaas-y-grids-configurables-a-cchip2.md",
-              "ToolTip": "C:\\Users\\Oscar\\.copilot\\plans\\plan-aadir-pestaas-y-grids-configurables-a-cchip2.md [Versi\u00F3n preliminar]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Users\\Oscar\\.copilot\\plans\\plan-aadir-pestaas-y-grids-configurables-a-cchip2.md [Versi\u00F3n preliminar]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-10-22T00:11:27.328Z",
-              "EditorCaption": " [Versi\u00F3n preliminar]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CChip2.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\EditorChip\\CChip2.cs",
-              "RelativeDocumentMoniker": "InfoRam\\EditorChip\\CChip2.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\EditorChip\\CChip2.cs [Dise\u00F1o]",
-              "RelativeToolTip": "InfoRam\\EditorChip\\CChip2.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T23:58:42.868Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormEditorChip.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorChip.cs",
-              "RelativeDocumentMoniker": "InfoRam\\FormEditorChip.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorChip.cs [Dise\u00F1o]",
-              "RelativeToolTip": "InfoRam\\FormEditorChip.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T23:34:18.396Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ControlDibujable.cs",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\ControlDibujable.cs",
-              "RelativeDocumentMoniker": "InfoRam\\Dibujable\\ControlDibujable.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\ControlDibujable.cs",
-              "RelativeToolTip": "InfoRam\\Dibujable\\ControlDibujable.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-22T00:10:43.447Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FormEditorMascara.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorMascara.cs",
-              "RelativeDocumentMoniker": "InfoRam\\FormEditorMascara.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorMascara.cs [Dise\u00F1o]",
-              "RelativeToolTip": "InfoRam\\FormEditorMascara.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T03:21:13.374Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FormEditorMascara.cs",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorMascara.cs",
-              "RelativeDocumentMoniker": "InfoRam\\FormEditorMascara.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorMascara.cs",
-              "RelativeToolTip": "InfoRam\\FormEditorMascara.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAIA8wGkAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T07:03:51.577Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CPadEditable.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\EditorChip\\CPadEditable.cs",
-              "RelativeDocumentMoniker": "InfoRam\\EditorChip\\CPadEditable.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\EditorChip\\CPadEditable.cs [Dise\u00F1o]",
-              "RelativeToolTip": "InfoRam\\EditorChip\\CPadEditable.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T23:26:07.281Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CChip.cs",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\EditorChip\\CChip.cs",
-              "RelativeDocumentMoniker": "InfoRam\\EditorChip\\CChip.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\EditorChip\\CChip.cs",
-              "RelativeToolTip": "InfoRam\\EditorChip\\CChip.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAA0wFIAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T23:30:19.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CMascaraChip.cs",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\CMascaraChip.cs",
-              "RelativeDocumentMoniker": "InfoRam\\Dibujable\\CMascaraChip.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\CMascaraChip.cs",
-              "RelativeToolTip": "InfoRam\\Dibujable\\CMascaraChip.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAiwGQAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T06:11:27.031Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CChip.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\EditorChip\\CChip.cs",
-              "RelativeDocumentMoniker": "InfoRam\\EditorChip\\CChip.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\EditorChip\\CChip.cs [Dise\u00F1o]",
-              "RelativeToolTip": "InfoRam\\EditorChip\\CChip.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T23:29:47.643Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CPadEditable.cs",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\EditorChip\\CPadEditable.cs",
-              "RelativeDocumentMoniker": "InfoRam\\EditorChip\\CPadEditable.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\EditorChip\\CPadEditable.cs",
-              "RelativeToolTip": "InfoRam\\EditorChip\\CPadEditable.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAwwFkAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T23:13:25.219Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MiGraphics.cs",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\MiGraphics.cs",
-              "RelativeDocumentMoniker": "InfoRam\\MiGraphics.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\MiGraphics.cs",
-              "RelativeToolTip": "InfoRam\\MiGraphics.cs",
-              "ViewState": "AgIAAIUMAAAAAAAAAAAAALgMAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T07:39:22.29Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "plan-aadir-desplazamiento-a-controldibujable.md [Versi\u00F3n preliminar]",
-              "DocumentMoniker": "C:\\Users\\USER\\.copilot\\plans\\plan-aadir-desplazamiento-a-controldibujable.md",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Users\\USER\\.copilot\\plans\\plan-aadir-desplazamiento-a-controldibujable.md",
-              "ToolTip": "C:\\Users\\USER\\.copilot\\plans\\plan-aadir-desplazamiento-a-controldibujable.md [Versi\u00F3n preliminar]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Users\\USER\\.copilot\\plans\\plan-aadir-desplazamiento-a-controldibujable.md [Versi\u00F3n preliminar]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-10-21T07:38:20.981Z",
-              "EditorCaption": " [Versi\u00F3n preliminar]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "plan-guardar-y-abrir-mscaras-json.md [Versi\u00F3n preliminar]",
-              "DocumentMoniker": "C:\\Users\\USER\\.copilot\\plans\\plan-guardar-y-abrir-mscaras-json.md",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Users\\USER\\.copilot\\plans\\plan-guardar-y-abrir-mscaras-json.md",
-              "ToolTip": "C:\\Users\\USER\\.copilot\\plans\\plan-guardar-y-abrir-mscaras-json.md [Versi\u00F3n preliminar]",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\Users\\USER\\.copilot\\plans\\plan-guardar-y-abrir-mscaras-json.md [Versi\u00F3n preliminar]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2026-10-21T14:53:37.024Z",
-              "EditorCaption": " [Versi\u00F3n preliminar]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "FormEditorMascara.Designer.cs",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorMascara.Designer.cs",
-              "RelativeDocumentMoniker": "InfoRam\\FormEditorMascara.Designer.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorMascara.Designer.cs",
-              "RelativeToolTip": "InfoRam\\FormEditorMascara.Designer.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T07:37:55.198Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ControlDibujable.Designer.cs",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\ControlDibujable.Designer.cs",
-              "RelativeDocumentMoniker": "InfoRam\\Dibujable\\ControlDibujable.Designer.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\ControlDibujable.Designer.cs",
-              "RelativeToolTip": "InfoRam\\Dibujable\\ControlDibujable.Designer.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T07:37:55.111Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
               "Title": "CPad.cs",
               "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\CPad.cs",
               "RelativeDocumentMoniker": "InfoRam\\Dibujable\\CPad.cs",
               "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\CPad.cs",
               "RelativeToolTip": "InfoRam\\Dibujable\\CPad.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAABBwEIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAIwCUAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T05:56:26.127Z"
+              "WhenOpened": "2026-10-22T19:08:53.607Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "CDibujable.cs",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\CDibujable.cs",
-              "RelativeDocumentMoniker": "InfoRam\\Dibujable\\CDibujable.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\CDibujable.cs",
-              "RelativeToolTip": "InfoRam\\Dibujable\\CDibujable.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "CChip3.cs",
+              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\EditorChip\\CChip3.cs",
+              "RelativeDocumentMoniker": "InfoRam\\EditorChip\\CChip3.cs",
+              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\EditorChip\\CChip3.cs*",
+              "RelativeToolTip": "InfoRam\\EditorChip\\CChip3.cs*",
+              "ViewState": "AgIAALwBAAAAAAAAAAAwwMsBAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-21T06:05:39.724Z"
+              "WhenOpened": "2026-10-22T19:00:19.445Z",
+              "EditorCaption": ""
             }
           ]
         }

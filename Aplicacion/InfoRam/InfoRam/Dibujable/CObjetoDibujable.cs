@@ -22,7 +22,6 @@ namespace InfoRam.Dibujable
         public event CObjetoDibujableDelegate OnRemovebjetc;
         public event CObjetoDibujableDelegateCurdor OnChangeCursor;
         public event CObjetoDibujableDelegate2 OnEstoyAlFrente;
-//        private Modelo.ModeloDatos FModelo;
         private bool FMouseCapturado;
         public bool MouseCapturado
         {
@@ -30,26 +29,6 @@ namespace InfoRam.Dibujable
             {
                 return FMouseCapturado;
             }
-        }
-        //public Modelo.ModeloDatos Modelo
-        //{
-        //    get
-        //    {
-        //        return FModelo;
-        //    }
-        //    set
-        //    {
-        //        FModelo = value;
-        //        if (FModelo != null)
-        //            ModeloAsignado();
-        //    }
-        //}
-        /// <summary>
-        /// se llama cuando se asigna el mopdeli
-        /// </summary>
-        protected virtual void ModeloAsignado()
-        {
-
         }
         /// <summary>
         /// se llama cuando se da un doble click

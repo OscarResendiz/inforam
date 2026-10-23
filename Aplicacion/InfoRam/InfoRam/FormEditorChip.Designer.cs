@@ -34,7 +34,7 @@
             BtnSelMascara = new ToolStripButton();
             BtnAbrir = new ToolStripButton();
             BtnGuardar = new ToolStripButton();
-            cChip21 = new InfoRam.EditorChip.CChip2();
+            cChip31 = new InfoRam.EditorChip.CChip3();
             toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -84,20 +84,27 @@
             BtnGuardar.Size = new Size(23, 22);
             BtnGuardar.Text = "toolStripButton4";
             // 
-            // cChip21
+            // cChip31
             // 
-            cChip21.Dock = DockStyle.Fill;
-            cChip21.Location = new Point(0, 25);
-            cChip21.Name = "cChip21";
-            cChip21.Size = new Size(800, 425);
-            cChip21.TabIndex = 1;
+            cChip31.AnchoCuadricula = 50;
+            cChip31.AutoScroll = true;
+            cChip31.AutoScrollMinSize = new Size(575, 387);
+            cChip31.BackColor = SystemColors.Control;
+            cChip31.Columnas = 10;
+            cChip31.Dock = DockStyle.Fill;
+            cChip31.Filas = 10;
+            cChip31.Location = new Point(0, 25);
+            cChip31.Name = "cChip31";
+            cChip31.Size = new Size(800, 425);
+            cChip31.TabIndex = 1;
+            cChip31.Text = "cChip31";
             // 
             // FormEditorChip
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(cChip21);
+            Controls.Add(cChip31);
             Controls.Add(toolStrip1);
             Name = "FormEditorChip";
             Text = "FormEditorChip";
@@ -114,6 +121,6 @@
         private ToolStripButton BtnSelMascara;
         private ToolStripButton BtnAbrir;
         private ToolStripButton BtnGuardar;
-        private EditorChip.CChip2 cChip21;
+        private EditorChip.CChip3 cChip31;
     }
 }

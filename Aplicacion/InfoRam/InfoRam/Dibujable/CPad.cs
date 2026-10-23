@@ -8,6 +8,7 @@ namespace InfoRam.Dibujable
     /// <summary>
     /// Clase que representa un pad de un chip
     /// </summary>
+    /// 
     internal class CPad: CDibujable
     {
         public int X
@@ -25,11 +26,27 @@ namespace InfoRam.Dibujable
             get;
             set;
         }
+        public int MostrarNVD
+        {
+            get;
+            set;
+        }
         public String Nombre
         {
             get;
             set;
         }
+        public string ValorVoltaje 
+        {
+            get; 
+            set; 
+        }
+        public string ValorDiodos 
+        { 
+            get; 
+            set; 
+        }
+
         public float Zoom
         {
             get;
@@ -39,6 +56,13 @@ namespace InfoRam.Dibujable
         public Font Fuente { get; set; }
         public int Indice { get; set; }
 
+        public CPad()
+            {
+            MostrarNVD = 0;
+            Nombre = "";
+            ValorVoltaje = "";
+            ValorDiodos = "";
+        }
         public bool Contiene(int x, int y)
         {
             int diametroZoom = (int)(Diametro * Zoom);

@@ -10,6 +10,9 @@
     <Compile Update="EditorChip\CChip2.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="EditorChip\CChip3.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Update="EditorChip\CPadEditable.cs">
       <SubType>UserControl</SubType>
     </Compile>
