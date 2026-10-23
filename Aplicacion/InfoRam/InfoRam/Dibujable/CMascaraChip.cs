@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
+using System.Text.Json.Serialization;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace InfoRam.Dibujable
 {
-    internal class CMascaraChip : CDibujable
+    public class CMascaraChip : CDibujable
     {
         public int X
         {
@@ -42,13 +44,14 @@ namespace InfoRam.Dibujable
             get;
             set;
         }
-        public Func<int, bool> PadVisible { get; set; }
         private readonly List<CPad> pads = new List<CPad>();
         private Font fuentePad;
         private int filasConfiguradas;
         private int columnasConfiguradas;
         private float zoomConfigurado;
         private int diametroConfigurado;
+        [JsonIgnore]
+        public Func<int, bool> PadVisible { get; set; }
 
         public override void Dibuja(MiGraphics graphics)
         {
@@ -108,7 +111,7 @@ namespace InfoRam.Dibujable
                     CPad? padExistente = pads.Find(p => p.Indice == i * Columnas + j);
                     if (padExistente != null)
                     {
-                        padExistente.Nombre = nombre;
+                        //padExistente.Nombre = nombre;
                         padExistente.Zoom = Zoom;
                         padExistente.Fuente = fuentePad;
                         continue;
@@ -126,16 +129,6 @@ namespace InfoRam.Dibujable
                             Fuente = fuentePad
                         });
                     }
-                    //pads.Add(new CPad
-                    //{
-                    //    Indice = i * Columnas + j,
-                    //    X = X + j * diametroPad,
-                    //    Y = Y + i * diametroPad,
-                    //    Diametro = DiametroPad,
-                    //    Zoom = Zoom,
-                    //    Nombre = nombre, //$"{letra2}{letra}{i}",
-                    //    Fuente = fuentePad
-                    //});
                 }
             }
 
@@ -149,29 +142,40 @@ namespace InfoRam.Dibujable
             int diametroPad = (int)(DiametroPad * Zoom);
             return new Size(Columnas * diametroPad, Filas * diametroPad);
         }
-        public void AsignaVoltaje(String nombre, float valor)
+        public void AsignaVoltaje(string nombre, string valor)
         {
             foreach (CPad pad in pads)
             {
                 if (pad.Nombre == nombre)
                 {
-                    pad.ValorVoltaje = valor.ToString("0.00");
+                    pad.ValorVoltaje = valor;
                     break;
                 }
             }
         }
-        public void AsignaDiodo(String nombre, float valor)
+        public void CambiaNombre(string nombre, string nuevoNombre)
         {
             foreach (CPad pad in pads)
             {
                 if (pad.Nombre == nombre)
                 {
-                    pad.ValorDiodos = valor.ToString("0");
+                    pad.Nombre = nuevoNombre;
                     break;
                 }
             }
         }
-        public float GetVoltaje(String nombre)
+        public void AsignaDiodo(string nombre, string valor)
+        {
+            foreach (CPad pad in pads)
+            {
+                if (pad.Nombre == nombre)
+                {
+                    pad.ValorDiodos = valor;
+                    break;
+                }
+            }
+        }
+        public float GetVoltaje(string nombre)
         {
             foreach (CPad pad in pads)
             {
@@ -186,7 +190,7 @@ namespace InfoRam.Dibujable
             }
             return 0f;
         }
-        public float GetDiodo(String nombre)
+        public float GetDiodo(string nombre)
         {
             foreach (CPad pad in pads)
             {
@@ -216,6 +220,65 @@ namespace InfoRam.Dibujable
                 pads[i].Resaltado = false;
             }
             pads[indice].Resaltado = true;
+        }
+        public void RestableceValoresPads()
+        {
+         //   if (filasConfiguradas == Filas && columnasConfiguradas == Columnas &&
+           //    zoomConfigurado == Zoom && diametroConfigurado == DiametroPad)
+            //{
+              //  return;
+            //}
+
+            char letra = 'A';
+            char letra2 = '\0';
+            for (int i = 0; i < Filas; i++)
+            {
+                letra = 'A';
+                letra2 = '\0';
+                for (int j = 0; j < Columnas; j++, letra++)
+                {
+                    if (letra > 'Z')
+                    {
+                        letra = 'A';
+                        letra2++;
+                        if (letra2 < 'A')
+                            letra2 = 'A';
+                    }
+                    string nombre = "";
+                    if (letra2 != '\0')
+                    {
+                        nombre = $"{letra2}{letra}{i}";
+                    }
+                    else
+                    {
+                        nombre = $"{letra}{i}";
+                    }
+                    CPad? padExistente = pads.Find(p => p.Indice == i * Columnas + j);
+                    if (padExistente != null)
+                    {
+                        //padExistente.Nombre = nombre;
+                        padExistente.Zoom = Zoom;
+                        padExistente.Fuente = fuentePad;
+                        padExistente.Nombre = nombre;
+                        padExistente.ValorDiodos = "X";
+                        padExistente.ValorVoltaje = "0";
+                        continue;
+                    }
+                    else
+                    {
+                        pads.Add(new CPad
+                        {
+                            Indice = i * Columnas + j,
+                            X = X + j * DiametroPad,
+                            Y = Y + i * DiametroPad,
+                            Diametro = DiametroPad,
+                            Zoom = Zoom,
+                            Nombre = nombre, //$"{letra2}{letra}{i}",
+                            Fuente = fuentePad
+                        });
+                    }
+                }
+            }
         }
     }
 }

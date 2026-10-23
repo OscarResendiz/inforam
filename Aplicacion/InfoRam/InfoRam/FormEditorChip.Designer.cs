@@ -34,20 +34,25 @@
             BtnSelMascara = new ToolStripButton();
             BtnAbrir = new ToolStripButton();
             BtnGuardar = new ToolStripButton();
+            toolStripSeparator1 = new ToolStripSeparator();
+            toolStripLabel4 = new ToolStripLabel();
+            txtNombreChip = new ToolStripTextBox();
+            toolStripSeparator2 = new ToolStripSeparator();
             toolStripLabel1 = new ToolStripLabel();
             ComboOpciones = new ToolStripComboBox();
+            toolStripSeparator3 = new ToolStripSeparator();
             toolStripLabel3 = new ToolStripLabel();
             txtPad = new ToolStripTextBox();
             toolStripLabel2 = new ToolStripLabel();
             txtValor = new ToolStripTextBox();
-            cChip31 = new InfoRam.EditorChip.CChip3();
             btnAplicar = new ToolStripButton();
+            cChip31 = new InfoRam.EditorChip.CChip3();
             toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // toolStrip1
             // 
-            toolStrip1.Items.AddRange(new ToolStripItem[] { BtnNuevo, BtnSelMascara, BtnAbrir, BtnGuardar, toolStripLabel1, ComboOpciones, toolStripLabel3, txtPad, toolStripLabel2, txtValor, btnAplicar });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { BtnNuevo, BtnSelMascara, BtnAbrir, BtnGuardar, toolStripSeparator1, toolStripLabel4, txtNombreChip, toolStripSeparator2, toolStripLabel1, ComboOpciones, toolStripSeparator3, toolStripLabel3, txtPad, toolStripLabel2, txtValor, btnAplicar });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.Size = new Size(1085, 25);
@@ -62,6 +67,7 @@
             BtnNuevo.Name = "BtnNuevo";
             BtnNuevo.Size = new Size(23, 22);
             BtnNuevo.Text = "toolStripButton1";
+            BtnNuevo.Click += BtnNuevo_Click;
             // 
             // BtnSelMascara
             // 
@@ -81,6 +87,7 @@
             BtnAbrir.Name = "BtnAbrir";
             BtnAbrir.Size = new Size(23, 22);
             BtnAbrir.Text = "toolStripButton3";
+            BtnAbrir.Click += BtnAbrir_Click;
             // 
             // BtnGuardar
             // 
@@ -90,6 +97,28 @@
             BtnGuardar.Name = "BtnGuardar";
             BtnGuardar.Size = new Size(23, 22);
             BtnGuardar.Text = "toolStripButton4";
+            BtnGuardar.Click += BtnGuardar_Click;
+            // 
+            // toolStripSeparator1
+            // 
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            toolStripSeparator1.Size = new Size(6, 25);
+            // 
+            // toolStripLabel4
+            // 
+            toolStripLabel4.Name = "toolStripLabel4";
+            toolStripLabel4.Size = new Size(77, 22);
+            toolStripLabel4.Text = "Nombre chip";
+            // 
+            // txtNombreChip
+            // 
+            txtNombreChip.Name = "txtNombreChip";
+            txtNombreChip.Size = new Size(100, 25);
+            // 
+            // toolStripSeparator2
+            // 
+            toolStripSeparator2.Name = "toolStripSeparator2";
+            toolStripSeparator2.Size = new Size(6, 25);
             // 
             // toolStripLabel1
             // 
@@ -105,6 +134,11 @@
             ComboOpciones.Name = "ComboOpciones";
             ComboOpciones.Size = new Size(121, 25);
             ComboOpciones.SelectedIndexChanged += ComboOpciones_Click;
+            // 
+            // toolStripSeparator3
+            // 
+            toolStripSeparator3.Name = "toolStripSeparator3";
+            toolStripSeparator3.Size = new Size(6, 25);
             // 
             // toolStripLabel3
             // 
@@ -128,6 +162,17 @@
             // 
             txtValor.Name = "txtValor";
             txtValor.Size = new Size(100, 25);
+            txtValor.KeyUp += txtValor_KeyUp;
+            // 
+            // btnAplicar
+            // 
+            btnAplicar.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnAplicar.Image = (Image)resources.GetObject("btnAplicar.Image");
+            btnAplicar.ImageTransparentColor = Color.Magenta;
+            btnAplicar.Name = "btnAplicar";
+            btnAplicar.Size = new Size(48, 22);
+            btnAplicar.Text = "Aplicar";
+            btnAplicar.Click += btnAplicar_Click;
             // 
             // cChip31
             // 
@@ -144,16 +189,6 @@
             cChip31.TabIndex = 1;
             cChip31.Text = "cChip31";
             cChip31.OnPadClick += cChip31_OnPadClick;
-            // 
-            // btnAplicar
-            // 
-            btnAplicar.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            btnAplicar.Image = (Image)resources.GetObject("btnAplicar.Image");
-            btnAplicar.ImageTransparentColor = Color.Magenta;
-            btnAplicar.Name = "btnAplicar";
-            btnAplicar.Size = new Size(48, 22);
-            btnAplicar.Text = "Aplicar";
-            btnAplicar.Click += btnAplicar_Click;
             // 
             // FormEditorChip
             // 
@@ -186,5 +221,10 @@
         private ToolStripLabel toolStripLabel3;
         private ToolStripTextBox txtPad;
         private ToolStripButton btnAplicar;
+        private ToolStripSeparator toolStripSeparator1;
+        private ToolStripLabel toolStripLabel4;
+        private ToolStripTextBox txtNombreChip;
+        private ToolStripSeparator toolStripSeparator2;
+        private ToolStripSeparator toolStripSeparator3;
     }
 }

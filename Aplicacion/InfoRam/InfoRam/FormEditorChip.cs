@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InfoRam.Dibujable;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,11 +8,13 @@ using System.IO;
 using System.Text;
 using System.Text.Json;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace InfoRam
 {
     public partial class FormEditorChip : Form
     {
+        CPad PadSeleccionado = null;
         private sealed class MascaraArchivo
         {
             public string Nombre { get; set; } = string.Empty;
@@ -25,6 +28,9 @@ namespace InfoRam
             public int Fila { get; set; }
             public int Columna { get; set; }
             public bool Visible { get; set; }
+            public string Nombre { get; set; }
+            public string ValorVoltaje { get; set; }
+            public string ValorDiodos { get; set; }
         }
 
         public FormEditorChip()
@@ -36,7 +42,7 @@ namespace InfoRam
         {
             using OpenFileDialog dialogo = new OpenFileDialog
             {
-                Filter = "Archivos JSON (*.json)|*.json|Todos los archivos (*.*)|*.*",
+                Filter = "Archivos mascara (*.mascara)|*.mascara|Todos los archivos (*.*)|*.*",
                 Title = "Abrir máscara"
             };
 
@@ -126,27 +132,167 @@ namespace InfoRam
 
         private void cChip31_OnPadClick(InfoRam.Dibujable.CPad pad)
         {
-            txtPad.Text = pad.Nombre;
-            txtValor.Text = pad.DameValor();
+            PadSeleccionado = pad;
+            txtPad.Text = PadSeleccionado.Nombre;
+            txtValor.Text = PadSeleccionado.DameValor();
+            txtValor.Focus();
+            txtValor.SelectAll();
         }
 
         private void btnAplicar_Click(object sender, EventArgs e)
         {
-            float valor = 0.0f;
+            if (PadSeleccionado == null)
+            {
+                return;
+            }
+            ;
             switch (ComboOpciones.SelectedIndex)
             {
                 case 0:
-                    return;
+                    //cChip31.CambiaNombrePad(txtPad.Text, txtValor.Text);
+                    PadSeleccionado.Nombre = txtValor.Text;
+                    break;
                 case 1:
-                    float.TryParse(txtValor.Text, out valor);
-                    cChip31.AsignaVoltaje(txtPad.Text, valor);
+                    //cChip31.AsignaVoltaje(txtPad.Text, txtValor.Text);
+                    PadSeleccionado.ValorVoltaje = txtValor.Text;
                     break;
                 case 2:
-                    float.TryParse(txtValor.Text, out valor);
-                    cChip31.AsignaDiodo(txtPad.Text, valor);
+                    //cChip31.AsignaDiodo(txtPad.Text, txtValor.Text);
+                    PadSeleccionado.ValorDiodos = txtValor.Text;
                     break;
             }
             cChip31.Invalidate();
+        }
+
+        private void BtnGuardar_Click(object sender, EventArgs e)
+        {
+            using SaveFileDialog dialogo = new SaveFileDialog
+            {
+                Filter = "Archivos chip (*.chip)|*.chip|Todos los archivos (*.*)|*.*",
+                DefaultExt = "chip",
+                AddExtension = true,
+                FileName = NombreArchivo(txtNombreChip.Text),
+                Title = "Guardar máscara"
+            };
+
+            if (dialogo.ShowDialog(this) != DialogResult.OK)
+            {
+                return;
+            }
+
+            try
+            {
+                MascaraArchivo mascara = new MascaraArchivo
+                {
+                    Nombre = txtNombreChip.Text,
+                    Filas = cChip31.Filas,
+                    Columnas = cChip31.Columnas
+                };
+                bool[] visibilidad = cChip31.ObtieneVisibilidadPads();
+                for (int fila = 0; fila < mascara.Filas; fila++)
+                {
+                    for (int columna = 0; columna < mascara.Columnas; columna++)
+                    {
+                        CPad pad = cChip31.GetPad(fila * mascara.Columnas + columna);
+                        mascara.Pads.Add(new PadArchivo
+                        {
+                            Fila = fila,
+                            Columna = columna,
+                            Visible = visibilidad[fila * mascara.Columnas + columna],
+                            Nombre = pad.Nombre,
+                            ValorVoltaje = pad.ValorVoltaje,
+                            ValorDiodos = pad.ValorDiodos
+
+                        });
+                    }
+                }
+
+                //                string contenido = JsonSerializer.Serialize(cChip31.getMascara(), new JsonSerializerOptions
+                string contenido = JsonSerializer.Serialize(mascara, new JsonSerializerOptions
+                {
+                    WriteIndented = true
+                });
+                File.WriteAllText(dialogo.FileName, contenido);
+            }
+            catch (IOException excepcion)
+            {
+                MessageBox.Show(this, $"No se pudo guardar la máscara:\n{excepcion.Message}", "Guardar máscara", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        private static string NombreArchivo(string nombre)
+        {
+            if (string.IsNullOrWhiteSpace(nombre))
+            {
+                return "mascara.chip";
+            }
+
+            foreach (char caracter in Path.GetInvalidFileNameChars())
+            {
+                nombre = nombre.Replace(caracter, '_');
+            }
+
+            return Path.ChangeExtension(nombre, ".chip");
+        }
+
+        private void txtValor_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnAplicar_Click(null, null);
+            }
+        }
+
+        private void BtnAbrir_Click(object sender, EventArgs e)
+        {
+            using OpenFileDialog dialogo = new OpenFileDialog
+            {
+                Filter = "Archivos CHIP (*.chip)|*.chip|Todos los archivos (*.*)|*.*",
+                Title = "Abrir máscara"
+            };
+
+            if (dialogo.ShowDialog(this) != DialogResult.OK)
+            {
+                return;
+            }
+
+            try
+            {
+                string contenido = File.ReadAllText(dialogo.FileName);
+                MascaraArchivo? mascara = JsonSerializer.Deserialize<MascaraArchivo>(contenido);
+                bool[] visibilidad = ValidaMascara(mascara);
+
+                txtNombreChip.Text = mascara!.Nombre;
+                //TFilas.Value = 
+                //TColunmas.Value = 
+                cChip31.Filas = mascara!.Filas;
+                cChip31.Columnas = mascara.Columnas;
+                cChip31.reajustaPads();
+                cChip31.EstableceVisibilidadPads(visibilidad);
+                //asigno los valores de nombre, voltaje y diodos a cada pad
+                int indice = 0;
+                foreach (PadArchivo? pad in mascara.Pads)
+                {
+                    CPad padChip = cChip31.GetPad(indice);
+                    padChip.Nombre = pad.Nombre;
+                    padChip.ValorVoltaje = pad.ValorVoltaje;
+                    padChip.ValorDiodos = pad.ValorDiodos;
+                    indice++;
+                }
+                cChip31.Invalidate();
+            }
+            catch (Exception excepcion) when (excepcion is IOException || excepcion is JsonException || excepcion is InvalidDataException || excepcion is ArgumentException)
+            {
+                MessageBox.Show(this, $"No se pudo abrir la máscara:\n{excepcion.Message}", "Abrir máscara", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        private void BtnNuevo_Click(object sender, EventArgs e)
+        {
+            txtNombreChip.Clear();
+            txtPad.Clear();
+            txtValor.Clear();
+            cChip31.RestablecePads();
         }
     }
 }

@@ -85,7 +85,7 @@ namespace InfoRam
         {
             using OpenFileDialog dialogo = new OpenFileDialog
             {
-                Filter = "Archivos JSON (*.json)|*.json|Todos los archivos (*.*)|*.*",
+                Filter = "Archivos MASCARA (*.mascara)|*.mascara|Todos los archivos (*.*)|*.*",
                 Title = "Abrir máscara"
             };
 
@@ -115,8 +115,8 @@ namespace InfoRam
         {
             using SaveFileDialog dialogo = new SaveFileDialog
             {
-                Filter = "Archivos JSON (*.json)|*.json|Todos los archivos (*.*)|*.*",
-                DefaultExt = "json",
+                Filter = "Archivos MASCARA (*.mascara)|*.mascara|Todos los archivos (*.*)|*.*",
+                DefaultExt = "mascara",
                 AddExtension = true,
                 FileName = NombreArchivo(textBox1.Text),
                 Title = "Guardar máscara"
@@ -203,7 +203,7 @@ namespace InfoRam
         {
             if (string.IsNullOrWhiteSpace(nombre))
             {
-                return "mascara.json";
+                return "mascara.mascara";
             }
 
             foreach (char caracter in Path.GetInvalidFileNameChars())
@@ -211,7 +211,7 @@ namespace InfoRam
                 nombre = nombre.Replace(caracter, '_');
             }
 
-            return Path.ChangeExtension(nombre, ".json");
+            return Path.ChangeExtension(nombre, ".mascara");
         }
     }
 }

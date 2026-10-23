@@ -86,11 +86,6 @@ namespace InfoRam.EditorChip
             Invalidate();
         }
 
-        public void RestableceVisibilidadPads()
-        {
-            PadsOcultos.Clear();
-            Invalidate();
-        }
 
         [Category("Cuadricula")]
         [Description("Indica si se muestra la cuadrícula en el fondo.")]
@@ -522,12 +517,16 @@ namespace InfoRam.EditorChip
             mascara.MostrarNVD = MostrarNVD;
             mascara.Dibuja(FGraphics);
         }
-        public void AsignaVoltaje(String nombre, float valor)
+        public void AsignaVoltaje(String nombre, string valor)
         {
             mascara.AsignaVoltaje(nombre, valor);
         }
+        public void CambiaNombrePad(String nombre, String nuevoNombre)
+        {
+            mascara.CambiaNombre(nombre, nuevoNombre);
+        }
 
-        public void AsignaDiodo(String nombre, float valor)
+        public void AsignaDiodo(String nombre, string valor)
         {
             mascara.AsignaDiodo(nombre, valor);
         }
@@ -569,6 +568,26 @@ namespace InfoRam.EditorChip
                 OnPadClick?.Invoke(pad);
             }
             Invalidate();
+        }
+        public CMascaraChip getMascara()
+        {
+             return mascara; 
+        }
+        public CPad GetPad(int index)
+        {
+            return mascara.GetPad(index);
+        }
+        public void RestablecePads()
+        {
+            mascara.RestableceValoresPads();
+            //PadsOcultos.Clear();
+            Invalidate();
+        }
+        public void reajustaPads()
+        {
+            mascara.Filas = Filas;
+            mascara.Columnas = Columnas;
+            mascara.RestableceValoresPads();
         }
     }
 }

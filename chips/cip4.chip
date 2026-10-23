@@ -1,0 +1,807 @@
+{
+  "Nombre": "cip4",
+  "Columnas": 10,
+  "Filas": 10,
+  "Pads": [
+    {
+      "Fila": 0,
+      "Columna": 0,
+      "Visible": true,
+      "Nombre": "P1",
+      "ValorVoltaje": "1",
+      "ValorDiodos": "5"
+    },
+    {
+      "Fila": 0,
+      "Columna": 1,
+      "Visible": true,
+      "Nombre": "B0",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 0,
+      "Columna": 2,
+      "Visible": true,
+      "Nombre": "C0",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 0,
+      "Columna": 3,
+      "Visible": true,
+      "Nombre": "D0",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 0,
+      "Columna": 4,
+      "Visible": true,
+      "Nombre": "E0",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 0,
+      "Columna": 5,
+      "Visible": true,
+      "Nombre": "F0",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 0,
+      "Columna": 6,
+      "Visible": true,
+      "Nombre": "G0",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 0,
+      "Columna": 7,
+      "Visible": true,
+      "Nombre": "H0",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 0,
+      "Columna": 8,
+      "Visible": true,
+      "Nombre": "I0",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 0,
+      "Columna": 9,
+      "Visible": true,
+      "Nombre": "J0",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 1,
+      "Columna": 0,
+      "Visible": true,
+      "Nombre": "A1",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 1,
+      "Columna": 1,
+      "Visible": true,
+      "Nombre": "P2",
+      "ValorVoltaje": "2",
+      "ValorDiodos": "4"
+    },
+    {
+      "Fila": 1,
+      "Columna": 2,
+      "Visible": true,
+      "Nombre": "C1",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 1,
+      "Columna": 3,
+      "Visible": true,
+      "Nombre": "D1",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 1,
+      "Columna": 4,
+      "Visible": true,
+      "Nombre": "E1",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 1,
+      "Columna": 5,
+      "Visible": true,
+      "Nombre": "F1",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 1,
+      "Columna": 6,
+      "Visible": true,
+      "Nombre": "G1",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 1,
+      "Columna": 7,
+      "Visible": true,
+      "Nombre": "H1",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 1,
+      "Columna": 8,
+      "Visible": true,
+      "Nombre": "I1",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 1,
+      "Columna": 9,
+      "Visible": true,
+      "Nombre": "J1",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 2,
+      "Columna": 0,
+      "Visible": true,
+      "Nombre": "A2",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 2,
+      "Columna": 1,
+      "Visible": true,
+      "Nombre": "B2",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 2,
+      "Columna": 2,
+      "Visible": true,
+      "Nombre": "P3",
+      "ValorVoltaje": "3",
+      "ValorDiodos": "3"
+    },
+    {
+      "Fila": 2,
+      "Columna": 3,
+      "Visible": true,
+      "Nombre": "D2",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 2,
+      "Columna": 4,
+      "Visible": true,
+      "Nombre": "E2",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 2,
+      "Columna": 5,
+      "Visible": true,
+      "Nombre": "F2",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 2,
+      "Columna": 6,
+      "Visible": true,
+      "Nombre": "G2",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 2,
+      "Columna": 7,
+      "Visible": true,
+      "Nombre": "H2",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 2,
+      "Columna": 8,
+      "Visible": true,
+      "Nombre": "I2",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 2,
+      "Columna": 9,
+      "Visible": true,
+      "Nombre": "J2",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 3,
+      "Columna": 0,
+      "Visible": true,
+      "Nombre": "A3",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 3,
+      "Columna": 1,
+      "Visible": true,
+      "Nombre": "B3",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 3,
+      "Columna": 2,
+      "Visible": true,
+      "Nombre": "C3",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 3,
+      "Columna": 3,
+      "Visible": true,
+      "Nombre": "P4",
+      "ValorVoltaje": "4",
+      "ValorDiodos": "2"
+    },
+    {
+      "Fila": 3,
+      "Columna": 4,
+      "Visible": true,
+      "Nombre": "E3",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 3,
+      "Columna": 5,
+      "Visible": true,
+      "Nombre": "F3",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 3,
+      "Columna": 6,
+      "Visible": true,
+      "Nombre": "G3",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 3,
+      "Columna": 7,
+      "Visible": true,
+      "Nombre": "H3",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 3,
+      "Columna": 8,
+      "Visible": true,
+      "Nombre": "I3",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 3,
+      "Columna": 9,
+      "Visible": true,
+      "Nombre": "J3",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 4,
+      "Columna": 0,
+      "Visible": true,
+      "Nombre": "A4",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 4,
+      "Columna": 1,
+      "Visible": true,
+      "Nombre": "B4",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 4,
+      "Columna": 2,
+      "Visible": true,
+      "Nombre": "C4",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 4,
+      "Columna": 3,
+      "Visible": true,
+      "Nombre": "D4",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 4,
+      "Columna": 4,
+      "Visible": true,
+      "Nombre": "P5",
+      "ValorVoltaje": "5",
+      "ValorDiodos": "1"
+    },
+    {
+      "Fila": 4,
+      "Columna": 5,
+      "Visible": true,
+      "Nombre": "F4",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 4,
+      "Columna": 6,
+      "Visible": true,
+      "Nombre": "G4",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 4,
+      "Columna": 7,
+      "Visible": true,
+      "Nombre": "H4",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 4,
+      "Columna": 8,
+      "Visible": true,
+      "Nombre": "I4",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 4,
+      "Columna": 9,
+      "Visible": true,
+      "Nombre": "J4",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 5,
+      "Columna": 0,
+      "Visible": true,
+      "Nombre": "A5",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 5,
+      "Columna": 1,
+      "Visible": true,
+      "Nombre": "B5",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 5,
+      "Columna": 2,
+      "Visible": true,
+      "Nombre": "C5",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 5,
+      "Columna": 3,
+      "Visible": true,
+      "Nombre": "D5",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 5,
+      "Columna": 4,
+      "Visible": true,
+      "Nombre": "E5",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 5,
+      "Columna": 5,
+      "Visible": true,
+      "Nombre": "F5",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 5,
+      "Columna": 6,
+      "Visible": true,
+      "Nombre": "G5",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 5,
+      "Columna": 7,
+      "Visible": true,
+      "Nombre": "H5",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 5,
+      "Columna": 8,
+      "Visible": true,
+      "Nombre": "I5",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 5,
+      "Columna": 9,
+      "Visible": true,
+      "Nombre": "J5",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 6,
+      "Columna": 0,
+      "Visible": true,
+      "Nombre": "A6",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 6,
+      "Columna": 1,
+      "Visible": true,
+      "Nombre": "B6",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 6,
+      "Columna": 2,
+      "Visible": true,
+      "Nombre": "C6",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 6,
+      "Columna": 3,
+      "Visible": true,
+      "Nombre": "D6",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 6,
+      "Columna": 4,
+      "Visible": true,
+      "Nombre": "E6",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 6,
+      "Columna": 5,
+      "Visible": true,
+      "Nombre": "F6",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 6,
+      "Columna": 6,
+      "Visible": true,
+      "Nombre": "G6",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 6,
+      "Columna": 7,
+      "Visible": true,
+      "Nombre": "H6",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 6,
+      "Columna": 8,
+      "Visible": true,
+      "Nombre": "I6",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 6,
+      "Columna": 9,
+      "Visible": true,
+      "Nombre": "J6",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 7,
+      "Columna": 0,
+      "Visible": true,
+      "Nombre": "A7",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 7,
+      "Columna": 1,
+      "Visible": true,
+      "Nombre": "B7",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 7,
+      "Columna": 2,
+      "Visible": true,
+      "Nombre": "C7",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 7,
+      "Columna": 3,
+      "Visible": true,
+      "Nombre": "D7",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 7,
+      "Columna": 4,
+      "Visible": true,
+      "Nombre": "E7",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 7,
+      "Columna": 5,
+      "Visible": true,
+      "Nombre": "F7",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 7,
+      "Columna": 6,
+      "Visible": true,
+      "Nombre": "G7",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 7,
+      "Columna": 7,
+      "Visible": true,
+      "Nombre": "H7",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 7,
+      "Columna": 8,
+      "Visible": true,
+      "Nombre": "I7",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 7,
+      "Columna": 9,
+      "Visible": true,
+      "Nombre": "J7",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 8,
+      "Columna": 0,
+      "Visible": true,
+      "Nombre": "A8",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 8,
+      "Columna": 1,
+      "Visible": true,
+      "Nombre": "B8",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 8,
+      "Columna": 2,
+      "Visible": true,
+      "Nombre": "C8",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 8,
+      "Columna": 3,
+      "Visible": true,
+      "Nombre": "D8",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 8,
+      "Columna": 4,
+      "Visible": true,
+      "Nombre": "E8",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 8,
+      "Columna": 5,
+      "Visible": true,
+      "Nombre": "F8",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 8,
+      "Columna": 6,
+      "Visible": true,
+      "Nombre": "G8",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 8,
+      "Columna": 7,
+      "Visible": true,
+      "Nombre": "H8",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 8,
+      "Columna": 8,
+      "Visible": true,
+      "Nombre": "I8",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 8,
+      "Columna": 9,
+      "Visible": true,
+      "Nombre": "J8",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 9,
+      "Columna": 0,
+      "Visible": true,
+      "Nombre": "A9",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 9,
+      "Columna": 1,
+      "Visible": true,
+      "Nombre": "B9",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 9,
+      "Columna": 2,
+      "Visible": true,
+      "Nombre": "C9",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 9,
+      "Columna": 3,
+      "Visible": true,
+      "Nombre": "D9",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 9,
+      "Columna": 4,
+      "Visible": true,
+      "Nombre": "E9",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 9,
+      "Columna": 5,
+      "Visible": true,
+      "Nombre": "F9",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 9,
+      "Columna": 6,
+      "Visible": true,
+      "Nombre": "G9",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 9,
+      "Columna": 7,
+      "Visible": true,
+      "Nombre": "H9",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 9,
+      "Columna": 8,
+      "Visible": true,
+      "Nombre": "I9",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    },
+    {
+      "Fila": 9,
+      "Columna": 9,
+      "Visible": true,
+      "Nombre": "J9",
+      "ValorVoltaje": "0",
+      "ValorDiodos": "X"
+    }
+  ]
+}
