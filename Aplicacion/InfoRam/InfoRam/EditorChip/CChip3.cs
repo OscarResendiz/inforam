@@ -9,8 +9,10 @@ using System.Windows.Forms;
 
 namespace InfoRam.EditorChip
 {
+    public delegate void OnPadClickDelegate(CPad pad);
     public partial class CChip3 : ScrollableControl
     {
+        public event OnPadClickDelegate OnPadClick;
         private int FFilas = 10;
         private float FZoom = 1.0f;
         private int FColumnas = 10;
@@ -21,7 +23,6 @@ namespace InfoRam.EditorChip
         private List<CObjetoDibujable> Controles;
         private readonly HashSet<int> PadsOcultos = new HashSet<int>();
         private Brush BakBrush;
-        //        Modelo.ModeloDatos FModelo;
         private MiGraphics FGraphics;
         private readonly CMascaraChip mascara = new CMascaraChip();
         private Size tamMascaraAnterior;
@@ -188,6 +189,14 @@ namespace InfoRam.EditorChip
                 FZoom = value;
                 Invalidate();
             }
+        }
+        [Category("General")]
+        [Description("indica si se mostraran los nombres, voltajes o diodos")]
+        [DefaultValue(0)]
+        public int MostrarNVD
+        {
+            get;
+            set;
         }
         private bool ShouldSerializeColorCuadricula()
         {
@@ -453,56 +462,28 @@ namespace InfoRam.EditorChip
         {
             int mx = e.Location.X + (FHScroolValue * Desplazamiento);
             int my = e.Location.Y + (FVScroolValue * Desplazamiento);
-
+            seleccionaPad(mx,my);
 //            if (e.Button == MouseButtons.Left && AlternaVisibilidadPad(mx, my))
-  //          {
-    //            return;
-      //      }
+//          {
+//            return;
+//      }
 
-            for (int i = Controles.Count - 1; i > 0; i--)
-            {
-                CObjetoDibujable obj = Controles[i];
-                if (obj.IsVisible())
-                {
-                    if (obj.OnMouseIn(mx, my))
-                    {
-                        if (obj.OnMouseClick(sender, e, mx, my) == true)
-                        {
-                            return;
-                        }
-                    }
-                }
-            }
+            //            for (int i = Controles.Count - 1; i > 0; i--)
+            //          {
+            //            CObjetoDibujable obj = Controles[i];
+            //          if (obj.IsVisible())
+            //        {
+            //          if (obj.OnMouseIn(mx, my))
+            //        {
+            //          if (obj.OnMouseClick(sender, e, mx, my) == true)
+            //        {
+            //          return;
+            //    }
+            //                    }
+            //              }
+            //        }
         }
 
-        private bool AlternaVisibilidadPad(int x, int y)
-        {
-            const int diametroPad = 35;
-            int diametroZoom = (int)(diametroPad * Zoom);
-            Size tamMascara = new Size(FColumnas * diametroZoom, FFilas * diametroZoom);
-            Point origen = CalculaOrigenMascara(tamMascara);
-
-            if (diametroZoom <= 0 || x < origen.X || y < origen.Y)
-            {
-                return false;
-            }
-
-            int columna = (x - origen.X) / diametroZoom;
-            int fila = (y - origen.Y) / diametroZoom;
-            if (columna < 0 || columna >= FColumnas || fila < 0 || fila >= FFilas)
-            {
-                return false;
-            }
-
-            int indice = fila * FColumnas + columna;
-            if (!PadsOcultos.Add(indice))
-            {
-                PadsOcultos.Remove(indice);
-            }
-
-            Invalidate();
-            return true;
-        }
 
         private Point CalculaOrigenMascara(Size tamMascara)
         {
@@ -538,7 +519,17 @@ namespace InfoRam.EditorChip
             }
 
             FGraphics.Clear(BackColor);
+            mascara.MostrarNVD = MostrarNVD;
             mascara.Dibuja(FGraphics);
+        }
+        public void AsignaVoltaje(String nombre, float valor)
+        {
+            mascara.AsignaVoltaje(nombre, valor);
+        }
+
+        public void AsignaDiodo(String nombre, float valor)
+        {
+            mascara.AsignaDiodo(nombre, valor);
         }
 
         private bool EsPadVisible(int indice)
@@ -550,6 +541,34 @@ namespace InfoRam.EditorChip
             base.OnPaint(e);
             Dibuja();
             e.Graphics.DrawImage(FGraphics.GetBitMap(), 0, 0);
+        }
+        private void seleccionaPad(int x, int y)
+        {
+            const int diametroPad = 35;
+            int diametroZoom = (int)(diametroPad * Zoom);
+            Size tamMascara = new Size(FColumnas * diametroZoom, FFilas * diametroZoom);
+            Point origen = CalculaOrigenMascara(tamMascara);
+
+            if (diametroZoom <= 0 || x < origen.X || y < origen.Y)
+            {
+                return ;
+            }
+
+            int columna = (x - origen.X) / diametroZoom;
+            int fila = (y - origen.Y) / diametroZoom;
+            if (columna < 0 || columna >= FColumnas || fila < 0 || fila >= FFilas)
+            {
+                return ;
+            }
+
+            int indice = fila * FColumnas + columna;
+            CPad? pad = mascara.GetPad(indice);
+            mascara.ResaltaPad(indice);
+            if (pad.Visible)
+            {
+                OnPadClick?.Invoke(pad);
+            }
+            Invalidate();
         }
     }
 }

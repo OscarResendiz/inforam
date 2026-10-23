@@ -37,6 +37,11 @@ namespace InfoRam.Dibujable
             get;
             set;
         }
+        public int MostrarNVD
+        {
+            get;
+            set;
+        }
         public Func<int, bool> PadVisible { get; set; }
         private readonly List<CPad> pads = new List<CPad>();
         private Font fuentePad;
@@ -58,6 +63,7 @@ namespace InfoRam.Dibujable
                 pad.X = X + (pad.Indice % Columnas) * diametroPad;
                 pad.Y = Y + (pad.Indice / Columnas) * diametroPad;
                 pad.Visible = PadVisible == null || PadVisible(pad.Indice);
+                pad.MostrarNVD = MostrarNVD;
                 pad.Dibuja(graphics);
             }
             //dibuja un rectangulo con las dimensiones de la mascara
@@ -73,7 +79,7 @@ namespace InfoRam.Dibujable
 
             fuentePad?.Dispose();
             fuentePad = new Font("Arial", 6 * Zoom);
-            pads.Clear();
+            //pads.Clear();
 
             char letra = 'A';
             char letra2 = '\0';
@@ -90,17 +96,46 @@ namespace InfoRam.Dibujable
                         if (letra2 < 'A')
                             letra2 = 'A';
                     }
-
-                    pads.Add(new CPad
+                    string nombre = "";
+                    if (letra2 != '\0')
                     {
-                        Indice = i * Columnas + j,
-                        X = X + j * diametroPad,
-                        Y = Y + i * diametroPad,
-                        Diametro = DiametroPad,
-                        Zoom = Zoom,
-                        Nombre = $"{letra2}{letra}{i}",
-                        Fuente = fuentePad
-                    });
+                        nombre = $"{letra2}{letra}{i}";
+                    }
+                    else
+                    {
+                        nombre = $"{letra}{i}";
+                    }
+                    CPad? padExistente = pads.Find(p => p.Indice == i * Columnas + j);
+                    if (padExistente != null)
+                    {
+                        padExistente.Nombre = nombre;
+                        padExistente.Zoom = Zoom;
+                        padExistente.Fuente = fuentePad;
+                        continue;
+                    }
+                    else
+                    {
+                        pads.Add(new CPad
+                        {
+                            Indice = i * Columnas + j,
+                            X = X + j * diametroPad,
+                            Y = Y + i * diametroPad,
+                            Diametro = DiametroPad,
+                            Zoom = Zoom,
+                            Nombre = nombre, //$"{letra2}{letra}{i}",
+                            Fuente = fuentePad
+                        });
+                    }
+                    //pads.Add(new CPad
+                    //{
+                    //    Indice = i * Columnas + j,
+                    //    X = X + j * diametroPad,
+                    //    Y = Y + i * diametroPad,
+                    //    Diametro = DiametroPad,
+                    //    Zoom = Zoom,
+                    //    Nombre = nombre, //$"{letra2}{letra}{i}",
+                    //    Fuente = fuentePad
+                    //});
                 }
             }
 
@@ -113,6 +148,74 @@ namespace InfoRam.Dibujable
         {
             int diametroPad = (int)(DiametroPad * Zoom);
             return new Size(Columnas * diametroPad, Filas * diametroPad);
+        }
+        public void AsignaVoltaje(String nombre, float valor)
+        {
+            foreach (CPad pad in pads)
+            {
+                if (pad.Nombre == nombre)
+                {
+                    pad.ValorVoltaje = valor.ToString("0.00");
+                    break;
+                }
+            }
+        }
+        public void AsignaDiodo(String nombre, float valor)
+        {
+            foreach (CPad pad in pads)
+            {
+                if (pad.Nombre == nombre)
+                {
+                    pad.ValorDiodos = valor.ToString("0");
+                    break;
+                }
+            }
+        }
+        public float GetVoltaje(String nombre)
+        {
+            foreach (CPad pad in pads)
+            {
+                if (pad.Nombre == nombre)
+                {
+                    if (float.TryParse(pad.ValorVoltaje, out float valor))
+                    {
+                        return valor;
+                    }
+                    break;
+                }
+            }
+            return 0f;
+        }
+        public float GetDiodo(String nombre)
+        {
+            foreach (CPad pad in pads)
+            {
+                if (pad.Nombre == nombre)
+                {
+                    if (float.TryParse(pad.ValorDiodos, out float valor))
+                    {
+                        return valor;
+                    }
+                    break;
+                }
+            }
+            return 0f;
+        }
+        public CPad GetPad(int indice)
+        {
+            if (indice < 0 || indice >= pads.Count)
+            {
+                return null;
+            }
+            return pads[indice];
+        }
+        public void ResaltaPad(int indice)
+        {
+            for (int i = 0; i < pads.Count; i++)
+            {
+                pads[i].Resaltado = false;
+            }
+            pads[indice].Resaltado = true;
         }
     }
 }

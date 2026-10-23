@@ -34,16 +34,23 @@
             BtnSelMascara = new ToolStripButton();
             BtnAbrir = new ToolStripButton();
             BtnGuardar = new ToolStripButton();
+            toolStripLabel1 = new ToolStripLabel();
+            ComboOpciones = new ToolStripComboBox();
+            toolStripLabel3 = new ToolStripLabel();
+            txtPad = new ToolStripTextBox();
+            toolStripLabel2 = new ToolStripLabel();
+            txtValor = new ToolStripTextBox();
             cChip31 = new InfoRam.EditorChip.CChip3();
+            btnAplicar = new ToolStripButton();
             toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // toolStrip1
             // 
-            toolStrip1.Items.AddRange(new ToolStripItem[] { BtnNuevo, BtnSelMascara, BtnAbrir, BtnGuardar });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { BtnNuevo, BtnSelMascara, BtnAbrir, BtnGuardar, toolStripLabel1, ComboOpciones, toolStripLabel3, txtPad, toolStripLabel2, txtValor, btnAplicar });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(800, 25);
+            toolStrip1.Size = new Size(1085, 25);
             toolStrip1.TabIndex = 0;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -84,30 +91,80 @@
             BtnGuardar.Size = new Size(23, 22);
             BtnGuardar.Text = "toolStripButton4";
             // 
+            // toolStripLabel1
+            // 
+            toolStripLabel1.Name = "toolStripLabel1";
+            toolStripLabel1.Size = new Size(48, 22);
+            toolStripLabel1.Text = "Mostrar";
+            // 
+            // ComboOpciones
+            // 
+            ComboOpciones.DropDownStyle = ComboBoxStyle.DropDownList;
+            ComboOpciones.Items.AddRange(new object[] { "Nombres", "Voltajes", "Diodos" });
+            ComboOpciones.MergeIndex = 0;
+            ComboOpciones.Name = "ComboOpciones";
+            ComboOpciones.Size = new Size(121, 25);
+            ComboOpciones.SelectedIndexChanged += ComboOpciones_Click;
+            // 
+            // toolStripLabel3
+            // 
+            toolStripLabel3.Name = "toolStripLabel3";
+            toolStripLabel3.Size = new Size(27, 22);
+            toolStripLabel3.Text = "Pad";
+            // 
+            // txtPad
+            // 
+            txtPad.Name = "txtPad";
+            txtPad.ReadOnly = true;
+            txtPad.Size = new Size(100, 25);
+            // 
+            // toolStripLabel2
+            // 
+            toolStripLabel2.Name = "toolStripLabel2";
+            toolStripLabel2.Size = new Size(33, 22);
+            toolStripLabel2.Text = "Valor";
+            // 
+            // txtValor
+            // 
+            txtValor.Name = "txtValor";
+            txtValor.Size = new Size(100, 25);
+            // 
             // cChip31
             // 
             cChip31.AnchoCuadricula = 50;
             cChip31.AutoScroll = true;
-            cChip31.AutoScrollMinSize = new Size(575, 387);
+            cChip31.AutoScrollMinSize = new Size(717, 509);
             cChip31.BackColor = SystemColors.Control;
             cChip31.Columnas = 10;
             cChip31.Dock = DockStyle.Fill;
             cChip31.Filas = 10;
             cChip31.Location = new Point(0, 25);
             cChip31.Name = "cChip31";
-            cChip31.Size = new Size(800, 425);
+            cChip31.Size = new Size(1085, 669);
             cChip31.TabIndex = 1;
             cChip31.Text = "cChip31";
+            cChip31.OnPadClick += cChip31_OnPadClick;
+            // 
+            // btnAplicar
+            // 
+            btnAplicar.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            btnAplicar.Image = (Image)resources.GetObject("btnAplicar.Image");
+            btnAplicar.ImageTransparentColor = Color.Magenta;
+            btnAplicar.Name = "btnAplicar";
+            btnAplicar.Size = new Size(48, 22);
+            btnAplicar.Text = "Aplicar";
+            btnAplicar.Click += btnAplicar_Click;
             // 
             // FormEditorChip
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1085, 694);
             Controls.Add(cChip31);
             Controls.Add(toolStrip1);
             Name = "FormEditorChip";
             Text = "FormEditorChip";
+            Load += FormEditorChip_Load;
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
             ResumeLayout(false);
@@ -122,5 +179,12 @@
         private ToolStripButton BtnAbrir;
         private ToolStripButton BtnGuardar;
         private EditorChip.CChip3 cChip31;
+        private ToolStripLabel toolStripLabel1;
+        private ToolStripComboBox ComboOpciones;
+        private ToolStripLabel toolStripLabel2;
+        private ToolStripTextBox txtValor;
+        private ToolStripLabel toolStripLabel3;
+        private ToolStripTextBox txtPad;
+        private ToolStripButton btnAplicar;
     }
 }

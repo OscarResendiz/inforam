@@ -112,5 +112,41 @@ namespace InfoRam
 
             return visibilidad;
         }
+
+        private void FormEditorChip_Load(object sender, EventArgs e)
+        {
+            ComboOpciones.SelectedIndex = 0;
+        }
+
+        private void ComboOpciones_Click(object sender, EventArgs e)
+        {
+            cChip31.MostrarNVD = ComboOpciones.SelectedIndex;
+            cChip31.Invalidate();
+        }
+
+        private void cChip31_OnPadClick(InfoRam.Dibujable.CPad pad)
+        {
+            txtPad.Text = pad.Nombre;
+            txtValor.Text = pad.DameValor();
+        }
+
+        private void btnAplicar_Click(object sender, EventArgs e)
+        {
+            float valor = 0.0f;
+            switch (ComboOpciones.SelectedIndex)
+            {
+                case 0:
+                    return;
+                case 1:
+                    float.TryParse(txtValor.Text, out valor);
+                    cChip31.AsignaVoltaje(txtPad.Text, valor);
+                    break;
+                case 2:
+                    float.TryParse(txtValor.Text, out valor);
+                    cChip31.AsignaDiodo(txtPad.Text, valor);
+                    break;
+            }
+            cChip31.Invalidate();
+        }
     }
 }
