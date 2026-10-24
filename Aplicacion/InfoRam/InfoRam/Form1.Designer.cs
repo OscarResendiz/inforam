@@ -28,63 +28,75 @@
         /// </summary>
         private void InitializeComponent()
         {
-            menuStrip1 = new MenuStrip();
-            ménuToolStripMenuItem = new ToolStripMenuItem();
-            editorDeMascarasToolStripMenuItem = new ToolStripMenuItem();
-            editorDeChipsToolStripMenuItem = new ToolStripMenuItem();
-            menuStrip1.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            panel1 = new Panel();
+            panel2 = new Panel();
+            panel3 = new Panel();
+            panel4 = new Panel();
             SuspendLayout();
             // 
-            // menuStrip1
+            // panel1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { ménuToolStripMenuItem });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 24);
-            menuStrip1.TabIndex = 0;
-            menuStrip1.Text = "menuStrip1";
+            panel1.BackColor = Color.Transparent;
+            panel1.Cursor = Cursors.Hand;
+            panel1.Location = new Point(76, 159);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(150, 39);
+            panel1.TabIndex = 1;
+            panel1.MouseClick += panel1_MouseClick;
             // 
-            // ménuToolStripMenuItem
+            // panel2
             // 
-            ménuToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { editorDeMascarasToolStripMenuItem, editorDeChipsToolStripMenuItem });
-            ménuToolStripMenuItem.Name = "ménuToolStripMenuItem";
-            ménuToolStripMenuItem.Size = new Size(50, 20);
-            ménuToolStripMenuItem.Text = "Ménu";
+            panel2.BackColor = Color.Transparent;
+            panel2.Cursor = Cursors.Hand;
+            panel2.Location = new Point(76, 207);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(150, 39);
+            panel2.TabIndex = 2;
+            panel2.MouseClick += panel2_MouseClick;
             // 
-            // editorDeMascarasToolStripMenuItem
+            // panel3
             // 
-            editorDeMascarasToolStripMenuItem.Name = "editorDeMascarasToolStripMenuItem";
-            editorDeMascarasToolStripMenuItem.Size = new Size(180, 22);
-            editorDeMascarasToolStripMenuItem.Text = "Editor de mascaras";
-            editorDeMascarasToolStripMenuItem.Click += editorDeMascarasToolStripMenuItem_Click;
+            panel3.BackColor = Color.Transparent;
+            panel3.Cursor = Cursors.Hand;
+            panel3.Location = new Point(76, 254);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(150, 39);
+            panel3.TabIndex = 3;
+            panel3.MouseClick += panel3_MouseClick;
             // 
-            // editorDeChipsToolStripMenuItem
+            // panel4
             // 
-            editorDeChipsToolStripMenuItem.Name = "editorDeChipsToolStripMenuItem";
-            editorDeChipsToolStripMenuItem.Size = new Size(180, 22);
-            editorDeChipsToolStripMenuItem.Text = "Editor de Chips";
-            editorDeChipsToolStripMenuItem.Click += editorDeChipsToolStripMenuItem_Click;
+            panel4.BackgroundImage = (Image)resources.GetObject("panel4.BackgroundImage");
+            panel4.BackgroundImageLayout = ImageLayout.Stretch;
+            panel4.Location = new Point(440, 12);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(90, 80);
+            panel4.TabIndex = 4;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(menuStrip1);
-            MainMenuStrip = menuStrip1;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(542, 346);
+            ControlBox = false;
+            Controls.Add(panel4);
+            Controls.Add(panel3);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "Form1";
-            Text = "Form1";
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "TECSAM";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem ménuToolStripMenuItem;
-        private ToolStripMenuItem editorDeMascarasToolStripMenuItem;
-        private ToolStripMenuItem editorDeChipsToolStripMenuItem;
+        private Panel panel1;
+        private Panel panel2;
+        private Panel panel3;
+        private Panel panel4;
     }
 }

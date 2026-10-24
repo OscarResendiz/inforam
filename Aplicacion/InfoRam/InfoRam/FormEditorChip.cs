@@ -166,6 +166,11 @@ namespace InfoRam
 
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
+            if(txtNombreChip.Text.Trim() == "")
+            {
+                MessageBox.Show(this, "Debe ingresar un nombre para el chip.", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             using SaveFileDialog dialogo = new SaveFileDialog
             {
                 Filter = "Archivos chip (*.chip)|*.chip|Todos los archivos (*.*)|*.*",
@@ -293,6 +298,11 @@ namespace InfoRam
             txtPad.Clear();
             txtValor.Clear();
             cChip31.RestablecePads();
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

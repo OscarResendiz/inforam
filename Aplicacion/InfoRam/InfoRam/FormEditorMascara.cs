@@ -65,102 +65,6 @@ namespace InfoRam
             controlDibujable1.Columnas = (int)TColunmas.Value;
         }
 
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        { 
-
-            float zoom = float.Parse(comboBox1.SelectedItem.ToString());
-            controlDibujable1.Zoom= zoom;
-        }
-
-        private void toolStripButton1_Click(object sender, EventArgs e)
-        {
-            textBox1.Clear();
-            TFilas.Value = 10;
-            TColunmas.Value = 10;
-            controlDibujable1.RestableceVisibilidadPads();
-        }
-
-        private void toolStripButton2_Click(object sender, EventArgs e)
-        {
-            using OpenFileDialog dialogo = new OpenFileDialog
-            {
-                Filter = "Archivos MASCARA (*.mascara)|*.mascara|Todos los archivos (*.*)|*.*",
-                Title = "Abrir máscara"
-            };
-
-            if (dialogo.ShowDialog(this) != DialogResult.OK)
-            {
-                return;
-            }
-
-            try
-            {
-                string contenido = File.ReadAllText(dialogo.FileName);
-                MascaraArchivo? mascara = JsonSerializer.Deserialize<MascaraArchivo>(contenido);
-                bool[] visibilidad = ValidaMascara(mascara);
-
-                textBox1.Text = mascara!.Nombre;
-                TFilas.Value = mascara.Filas;
-                TColunmas.Value = mascara.Columnas;
-                controlDibujable1.EstableceVisibilidadPads(visibilidad);
-            }
-            catch (Exception excepcion) when (excepcion is IOException || excepcion is JsonException || excepcion is InvalidDataException || excepcion is ArgumentException)
-            {
-                MessageBox.Show(this, $"No se pudo abrir la máscara:\n{excepcion.Message}", "Abrir máscara", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void toolStripButton3_Click(object sender, EventArgs e)
-        {
-            using SaveFileDialog dialogo = new SaveFileDialog
-            {
-                Filter = "Archivos MASCARA (*.mascara)|*.mascara|Todos los archivos (*.*)|*.*",
-                DefaultExt = "mascara",
-                AddExtension = true,
-                FileName = NombreArchivo(textBox1.Text),
-                Title = "Guardar máscara"
-            };
-
-            if (dialogo.ShowDialog(this) != DialogResult.OK)
-            {
-                return;
-            }
-
-            try
-            {
-                MascaraArchivo mascara = new MascaraArchivo
-                {
-                    Nombre = textBox1.Text,
-                    Filas = (int)TFilas.Value,
-                    Columnas = (int)TColunmas.Value
-                };
-                bool[] visibilidad = controlDibujable1.ObtieneVisibilidadPads();
-                for (int fila = 0; fila < mascara.Filas; fila++)
-                {
-                    for (int columna = 0; columna < mascara.Columnas; columna++)
-                    {
-                        mascara.Pads.Add(new PadArchivo
-                        {
-                            Fila = fila,
-                            Columna = columna,
-                            Visible = visibilidad[fila * mascara.Columnas + columna]
-                        });
-                    }
-                }
-
-                string contenido = JsonSerializer.Serialize(mascara, new JsonSerializerOptions
-                {
-                    WriteIndented = true
-                });
-                File.WriteAllText(dialogo.FileName, contenido);
-            }
-            catch (IOException excepcion)
-            {
-                MessageBox.Show(this, $"No se pudo guardar la máscara:\n{excepcion.Message}", "Guardar máscara", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
         private bool[] ValidaMascara(MascaraArchivo? mascara)
         {
             if (mascara == null || string.IsNullOrWhiteSpace(mascara.Nombre) ||
@@ -212,6 +116,108 @@ namespace InfoRam
             }
 
             return Path.ChangeExtension(nombre, ".mascara");
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            if(txtNombre.Text.Trim() == "")
+            {
+                MessageBox.Show(this, "Debe ingresar un nombre para la máscara.", "Guardar máscara", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            using SaveFileDialog dialogo = new SaveFileDialog
+            {
+                Filter = "Archivos MASCARA (*.mascara)|*.mascara|Todos los archivos (*.*)|*.*",
+                DefaultExt = "mascara",
+                AddExtension = true,
+                FileName = NombreArchivo(txtNombre.Text),
+                Title = "Guardar máscara"
+            };
+
+            if (dialogo.ShowDialog(this) != DialogResult.OK)
+            {
+                return;
+            }
+
+            try
+            {
+                MascaraArchivo mascara = new MascaraArchivo
+                {
+                    Nombre = txtNombre.Text,
+                    Filas = (int)TFilas.Value,
+                    Columnas = (int)TColunmas.Value
+                };
+                bool[] visibilidad = controlDibujable1.ObtieneVisibilidadPads();
+                for (int fila = 0; fila < mascara.Filas; fila++)
+                {
+                    for (int columna = 0; columna < mascara.Columnas; columna++)
+                    {
+                        mascara.Pads.Add(new PadArchivo
+                        {
+                            Fila = fila,
+                            Columna = columna,
+                            Visible = visibilidad[fila * mascara.Columnas + columna]
+                        });
+                    }
+                }
+
+                string contenido = JsonSerializer.Serialize(mascara, new JsonSerializerOptions
+                {
+                    WriteIndented = true
+                });
+                File.WriteAllText(dialogo.FileName, contenido);
+            }
+            catch (IOException excepcion)
+            {
+                MessageBox.Show(this, $"No se pudo guardar la máscara:\n{excepcion.Message}", "Guardar máscara", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            txtNombre.Clear();
+            TFilas.Value = 10;
+            TColunmas.Value = 10;
+            controlDibujable1.RestableceVisibilidadPads();
+
+        }
+
+        private void btnAbrir_Click(object sender, EventArgs e)
+        {
+            using OpenFileDialog dialogo = new OpenFileDialog
+            {
+                Filter = "Archivos MASCARA (*.mascara)|*.mascara|Todos los archivos (*.*)|*.*",
+                Title = "Abrir máscara"
+            };
+
+            if (dialogo.ShowDialog(this) != DialogResult.OK)
+            {
+                return;
+            }
+
+            try
+            {
+                string contenido = File.ReadAllText(dialogo.FileName);
+                MascaraArchivo? mascara = JsonSerializer.Deserialize<MascaraArchivo>(contenido);
+                bool[] visibilidad = ValidaMascara(mascara);
+
+                txtNombre.Text = mascara!.Nombre;
+                TFilas.Value = mascara.Filas;
+                TColunmas.Value = mascara.Columnas;
+                controlDibujable1.EstableceVisibilidadPads(visibilidad);
+            }
+            catch (Exception excepcion) when (excepcion is IOException || excepcion is JsonException || excepcion is InvalidDataException || excepcion is ArgumentException)
+            {
+                MessageBox.Show(this, $"No se pudo abrir la máscara:\n{excepcion.Message}", "Abrir máscara", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

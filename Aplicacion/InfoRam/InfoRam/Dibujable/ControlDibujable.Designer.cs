@@ -28,24 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ControlDibujable));
+            contextMenuStrip1 = new ContextMenuStrip(components);
+            SuspendLayout();
             // 
             // contextMenuStrip1
             // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(61, 4);
             // 
             // ControlDibujable
             // 
-            this.BackColor = System.Drawing.SystemColors.Control;
-            this.Size = new System.Drawing.Size(420, 291);
-            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ControlDibujable_MouseClick);
-            this.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.ControlDibujable_MouseDoubleClick);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ControlDibujable_MouseDown);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ControlDibujable_MouseMove);
-            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.ControlDibujable_MouseUp);
-            this.ResumeLayout(false);
+            BackColor = SystemColors.Control;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            Size = new Size(420, 291);
+            MouseClick += ControlDibujable_MouseClick;
+            MouseDoubleClick += ControlDibujable_MouseDoubleClick;
+            MouseDown += ControlDibujable_MouseDown;
+            MouseMove += ControlDibujable_MouseMove;
+            MouseUp += ControlDibujable_MouseUp;
+            ResumeLayout(false);
 
         }
 
