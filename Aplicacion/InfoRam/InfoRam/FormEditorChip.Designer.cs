@@ -38,7 +38,13 @@
             button2 = new Button();
             button3 = new Button();
             panel3 = new Panel();
-            button4 = new Button();
+            BtnConfigurar = new Button();
+            BtnDesconectar = new Button();
+            BtnLeer = new Button();
+            BtnConectar = new Button();
+            ComboMultimetros = new ComboBox();
+            label5 = new Label();
+            BntAplicar = new Button();
             txtValor = new TextBox();
             label4 = new Label();
             txtPad = new TextBox();
@@ -151,7 +157,13 @@
             // 
             panel3.BackColor = Color.Transparent;
             panel3.BorderStyle = BorderStyle.Fixed3D;
-            panel3.Controls.Add(button4);
+            panel3.Controls.Add(BtnConfigurar);
+            panel3.Controls.Add(BtnDesconectar);
+            panel3.Controls.Add(BtnLeer);
+            panel3.Controls.Add(BtnConectar);
+            panel3.Controls.Add(ComboMultimetros);
+            panel3.Controls.Add(label5);
+            panel3.Controls.Add(BntAplicar);
             panel3.Controls.Add(txtValor);
             panel3.Controls.Add(label4);
             panel3.Controls.Add(txtPad);
@@ -166,15 +178,86 @@
             panel3.Size = new Size(268, 576);
             panel3.TabIndex = 3;
             // 
-            // button4
+            // BtnConfigurar
             // 
-            button4.BackgroundImage = (Image)resources.GetObject("button4.BackgroundImage");
-            button4.BackgroundImageLayout = ImageLayout.Stretch;
-            button4.Location = new Point(186, 167);
-            button4.Name = "button4";
-            button4.Size = new Size(39, 38);
-            button4.TabIndex = 9;
-            button4.UseVisualStyleBackColor = true;
+            BtnConfigurar.BackgroundImage = (Image)resources.GetObject("BtnConfigurar.BackgroundImage");
+            BtnConfigurar.BackgroundImageLayout = ImageLayout.Stretch;
+            BtnConfigurar.Location = new Point(80, 309);
+            BtnConfigurar.Name = "BtnConfigurar";
+            BtnConfigurar.Size = new Size(69, 68);
+            BtnConfigurar.TabIndex = 15;
+            BtnConfigurar.UseVisualStyleBackColor = true;
+            BtnConfigurar.EnabledChanged += BtnConfigurar_EnabledChanged;
+            BtnConfigurar.Click += BtnConfigurar_Click;
+            // 
+            // BtnDesconectar
+            // 
+            BtnDesconectar.BackgroundImage = (Image)resources.GetObject("BtnDesconectar.BackgroundImage");
+            BtnDesconectar.BackgroundImageLayout = ImageLayout.Stretch;
+            BtnDesconectar.Location = new Point(145, 383);
+            BtnDesconectar.Name = "BtnDesconectar";
+            BtnDesconectar.Size = new Size(69, 68);
+            BtnDesconectar.TabIndex = 14;
+            BtnDesconectar.UseVisualStyleBackColor = true;
+            BtnDesconectar.EnabledChanged += BtnDesconectar_EnabledChanged;
+            BtnDesconectar.Click += BtnDesconectar_Click;
+            // 
+            // BtnLeer
+            // 
+            BtnLeer.BackgroundImage = (Image)resources.GetObject("BtnLeer.BackgroundImage");
+            BtnLeer.BackgroundImageLayout = ImageLayout.Stretch;
+            BtnLeer.Location = new Point(80, 457);
+            BtnLeer.Name = "BtnLeer";
+            BtnLeer.Size = new Size(69, 68);
+            BtnLeer.TabIndex = 13;
+            BtnLeer.UseVisualStyleBackColor = true;
+            BtnLeer.EnabledChanged += BtnLeer_EnabledChanged;
+            BtnLeer.Click += BtnLeer_Click;
+            // 
+            // BtnConectar
+            // 
+            BtnConectar.BackgroundImage = (Image)resources.GetObject("BtnConectar.BackgroundImage");
+            BtnConectar.BackgroundImageLayout = ImageLayout.Stretch;
+            BtnConectar.Location = new Point(14, 383);
+            BtnConectar.Name = "BtnConectar";
+            BtnConectar.Size = new Size(69, 68);
+            BtnConectar.TabIndex = 12;
+            BtnConectar.UseVisualStyleBackColor = true;
+            BtnConectar.EnabledChanged += BtnConectar_EnabledChanged;
+            BtnConectar.Click += BtnConectar_Click;
+            // 
+            // ComboMultimetros
+            // 
+            ComboMultimetros.DropDownStyle = ComboBoxStyle.DropDownList;
+            ComboMultimetros.FormattingEnabled = true;
+            ComboMultimetros.Items.AddRange(new object[] { "Nombres", "Voltajes", "Diodos" });
+            ComboMultimetros.Location = new Point(14, 262);
+            ComboMultimetros.Name = "ComboMultimetros";
+            ComboMultimetros.Size = new Size(226, 23);
+            ComboMultimetros.TabIndex = 11;
+            ComboMultimetros.SelectedIndexChanged += ComboMultimetros_SelectedIndexChanged;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
+            label5.ForeColor = SystemColors.ActiveCaption;
+            label5.Location = new Point(14, 234);
+            label5.Name = "label5";
+            label5.Size = new Size(110, 25);
+            label5.TabIndex = 10;
+            label5.Text = "Multimetro";
+            // 
+            // BntAplicar
+            // 
+            BntAplicar.BackgroundImage = (Image)resources.GetObject("BntAplicar.BackgroundImage");
+            BntAplicar.BackgroundImageLayout = ImageLayout.Stretch;
+            BntAplicar.Location = new Point(186, 167);
+            BntAplicar.Name = "BntAplicar";
+            BntAplicar.Size = new Size(39, 38);
+            BntAplicar.TabIndex = 9;
+            BntAplicar.UseVisualStyleBackColor = true;
+            BntAplicar.Click += btnAplicar_Click;
             // 
             // txtValor
             // 
@@ -296,7 +379,13 @@
         private ComboBox ComboOpciones;
         private TextBox txtValor;
         private Label label4;
-        private Button button4;
+        private Button BntAplicar;
         private Button button5;
+        private ComboBox ComboMultimetros;
+        private Label label5;
+        private Button BtnDesconectar;
+        private Button BtnLeer;
+        private Button BtnConectar;
+        private Button BtnConfigurar;
     }
 }

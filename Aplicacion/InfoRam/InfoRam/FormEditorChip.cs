@@ -1,4 +1,6 @@
 ﻿using InfoRam.Dibujable;
+using InfoRam.Multimetros;
+using InfoRam.Properties;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,9 +14,21 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace InfoRam
 {
+    public enum EstadosMultimetro
+    {
+        NoSeleccionado
+            , Seleccionado
+            , Desconectado
+            , Conectado
+            ,Configurado
+    }
     public partial class FormEditorChip : Form
     {
         CPad PadSeleccionado = null;
+        private AdministradorMultimetros administradorMultimetros = new AdministradorMultimetros();
+        private System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Imagenes));
+
+        private IMultimetro Multimetro = null;
         private sealed class MascaraArchivo
         {
             public string Nombre { get; set; } = string.Empty;
@@ -119,15 +133,23 @@ namespace InfoRam
             return visibilidad;
         }
 
-        private void FormEditorChip_Load(object sender, EventArgs e)
-        {
-            ComboOpciones.SelectedIndex = 0;
-        }
 
         private void ComboOpciones_Click(object sender, EventArgs e)
         {
             cChip31.MostrarNVD = ComboOpciones.SelectedIndex;
             cChip31.Invalidate();
+            if (Multimetro == null)
+                return;
+            switch (ComboOpciones.SelectedIndex)
+            {
+                case 1:
+                    Multimetro.CambiaVoltimetro();
+                    break;
+                case 2:
+                    Multimetro.CambiaDiodos();
+                    break;
+
+            }
         }
 
         private void cChip31_OnPadClick(InfoRam.Dibujable.CPad pad)
@@ -166,7 +188,7 @@ namespace InfoRam
 
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
-            if(txtNombreChip.Text.Trim() == "")
+            if (txtNombreChip.Text.Trim() == "")
             {
                 MessageBox.Show(this, "Debe ingresar un nombre para el chip.", "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -304,5 +326,127 @@ namespace InfoRam
         {
             Close();
         }
+        private void FormEditorChip_Load(object sender, EventArgs e)
+        {
+            ComboOpciones.SelectedIndex = 0;
+            ComboMultimetros.Items.Clear();
+            ComboMultimetros.Items.AddRange(administradorMultimetros.ObtenerMultimetrosDisponibles().ToArray());
+            estadoMultimetro = EstadosMultimetro.NoSeleccionado;
+        }
+
+
+        private void BtnConfigurar_EnabledChanged(object sender, EventArgs e)
+        {
+            BtnConfigurar.BackgroundImage = BtnConfigurar.Enabled ? (Image)resources.GetObject("configurar") : (Image)resources.GetObject("configurarDisable");
+        }
+
+        private void BtnDesconectar_EnabledChanged(object sender, EventArgs e)
+        {
+            BtnDesconectar.BackgroundImage = BtnDesconectar.Enabled ? (Image)resources.GetObject("desconectar2") : (Image)resources.GetObject("desconectarDiable");
+        }
+
+        private void BtnLeer_EnabledChanged(object sender, EventArgs e)
+        {
+            BtnLeer.BackgroundImage = BtnLeer.Enabled ? (Image)resources.GetObject("leer2") : (Image)resources.GetObject("leerDiable");
+        }
+
+        private void BtnConectar_EnabledChanged(object sender, EventArgs e)
+        {
+            BtnConectar.BackgroundImage = BtnConectar.Enabled ? (Image)resources.GetObject("conectar") : (Image)resources.GetObject("conectarDiable");
+        }
+
+        private void ComboMultimetros_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Multimetro = administradorMultimetros.ObtenerMultimetro(ComboMultimetros.SelectedItem.ToString());
+            if (Multimetro == null)
+            {
+                estadoMultimetro = EstadosMultimetro.NoSeleccionado;
+            }
+            else
+            {
+                estadoMultimetro = EstadosMultimetro.Seleccionado;
+            }
+        }
+
+        private void BtnConfigurar_Click(object sender, EventArgs e)
+        {
+            if (Multimetro == null)
+                return;
+            Multimetro.Configurar();
+            estadoMultimetro = EstadosMultimetro.Configurado;
+        }
+
+        private void BtnConectar_Click(object sender, EventArgs e)
+        {
+            if (Multimetro == null)
+                return;
+            Multimetro.Conectar();
+            estadoMultimetro = EstadosMultimetro.Conectado;
+        }
+
+        private void BtnDesconectar_Click(object sender, EventArgs e)
+        {
+            if (Multimetro == null)
+                return;
+            Multimetro.Desconectar();
+            estadoMultimetro = EstadosMultimetro.Desconectado;
+        }
+
+        private void BtnLeer_Click(object sender, EventArgs e)
+        {
+            if (Multimetro == null)
+                return;
+            txtValor.Text = Multimetro.LeeDatos();
+            btnAplicar_Click(null, null);
+        }
+
+
+        private EstadosMultimetro estadoMultimetro
+        {
+            set
+            {
+                switch (value)
+                {
+                    case EstadosMultimetro.NoSeleccionado:
+                        BtnConfigurar.Enabled = false;
+                        BtnConectar.Enabled = false;
+                        BtnDesconectar.Enabled = false;
+                        BtnLeer.Enabled = false;
+                        ComboMultimetros.Enabled = true;
+                        break;
+                    case EstadosMultimetro.Seleccionado:
+                        BtnConfigurar.Enabled = true;
+                        BtnConectar.Enabled = true;
+                        BtnLeer.Enabled = false;
+                        BtnDesconectar.Enabled = false;
+                        BtnLeer.Enabled = false;
+                        ComboMultimetros.Enabled = true;
+                        break;
+                    case EstadosMultimetro.Desconectado:
+                        BtnConfigurar.Enabled = true;
+                        BtnConectar.Enabled = true;
+                        BtnDesconectar.Enabled = false;
+                        BtnLeer.Enabled = false;
+                        ComboMultimetros.Enabled = true;
+                        break;
+                    case EstadosMultimetro.Conectado:
+                        BtnConfigurar.Enabled = false;
+                        BtnConectar.Enabled = false;
+                        BtnDesconectar.Enabled = true;
+                        BtnLeer.Enabled = true;
+                        ComboMultimetros.Enabled = false;
+                        break;
+                    case EstadosMultimetro.Configurado:
+                        BtnConfigurar.Enabled = true;
+                        BtnConectar.Enabled = true;
+                        BtnDesconectar.Enabled = false;
+                        BtnLeer.Enabled = false;
+                        ComboMultimetros.Enabled = true;
+                        break;
+                }
+            }
+        }
     }
 }
+
+
