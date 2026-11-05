@@ -41,10 +41,10 @@
             ComboPuerto = new ComboBox();
             label1 = new Label();
             groupBox2 = new GroupBox();
+            TxtRetardo = new NumericUpDown();
             label6 = new Label();
             BtnAceptar = new Button();
             BtnCancelar = new Button();
-            TxtRetardo = new NumericUpDown();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)TxtRetardo).BeginInit();
@@ -197,6 +197,13 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Otros";
             // 
+            // TxtRetardo
+            // 
+            TxtRetardo.Location = new Point(146, 27);
+            TxtRetardo.Name = "TxtRetardo";
+            TxtRetardo.Size = new Size(246, 33);
+            TxtRetardo.TabIndex = 2;
+            // 
             // label6
             // 
             label6.AutoSize = true;
@@ -218,11 +225,13 @@
             BtnAceptar.Size = new Size(70, 70);
             BtnAceptar.TabIndex = 2;
             BtnAceptar.UseVisualStyleBackColor = true;
+            BtnAceptar.Click += BtnAceptar_Click;
             // 
             // BtnCancelar
             // 
             BtnCancelar.BackgroundImage = (Image)resources.GetObject("BtnCancelar.BackgroundImage");
             BtnCancelar.BackgroundImageLayout = ImageLayout.Stretch;
+            BtnCancelar.DialogResult = DialogResult.Cancel;
             BtnCancelar.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
             BtnCancelar.Location = new Point(293, 336);
             BtnCancelar.Name = "BtnCancelar";
@@ -230,18 +239,12 @@
             BtnCancelar.TabIndex = 3;
             BtnCancelar.UseVisualStyleBackColor = true;
             // 
-            // TxtRetardo
-            // 
-            TxtRetardo.Location = new Point(146, 27);
-            TxtRetardo.Name = "TxtRetardo";
-            TxtRetardo.Size = new Size(246, 33);
-            TxtRetardo.TabIndex = 2;
-            // 
             // FormConfigurar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            CancelButton = BtnCancelar;
             ClientSize = new Size(404, 415);
             Controls.Add(BtnCancelar);
             Controls.Add(BtnAceptar);

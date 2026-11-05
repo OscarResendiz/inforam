@@ -1,50 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\",
+  "WorkspaceRootPath": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\multimetros\\administradormultimetros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\multimetros\\administradormultimetros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\multimetros\\jtxtoola9\\jtxtoola9multimeter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\multimetros\\jtxtoola9\\jtxtoola9multimeter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\multimetros\\jtxtoola9\\formconfigurar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\multimetros\\jtxtoola9\\formconfigurar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\multimetros\\jtxtoola9\\formconfigurar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\multimetros\\jtxtoola9\\formconfigurar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\inforam\\formeditorchip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\formeditorchip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\formeditorchip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|d:\\repositoriosgit\\inforam\\aplicacion\\inforam\\inforam\\formeditorchip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\formeditorchip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\multimetros\\multimetrovitual\\multimetrovitual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\multimetros\\multimetrovitual\\multimetrovitual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|d:\\repositoriosgit\\inforam\\aplicacion\\inforam\\inforam\\formeditorchip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\formeditorchip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\formeditorchip.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\formeditorchip.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|d:\\repositoriosgit\\inforam\\aplicacion\\inforam\\inforam\\multimetros\\jtxtoola9\\jtxtoola9multimeter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\multimetros\\jtxtoola9\\jtxtoola9multimeter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\inforam\\formeditormascara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\formeditormascara.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\inforam\\multimetros\\jtxtoola9\\formconfigurar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\multimetros\\jtxtoola9\\formconfigurar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\dibujable\\controldibujable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\dibujable\\controldibujable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|d:\\repositoriosgit\\inforam\\aplicacion\\inforam\\inforam\\multimetros\\jtxtoola9\\manejadorconfiguracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\multimetros\\jtxtoola9\\manejadorconfiguracion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositorios\\inforam\\aplicacion\\inforam\\inforam\\formeditormascara.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\formeditormascara.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|d:\\repositoriosgit\\inforam\\aplicacion\\inforam\\inforam\\multimetros\\jtxtoola9\\jtxtoola9dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\multimetros\\jtxtoola9\\jtxtoola9dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,143 +34,83 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormConfigurar.cs",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Multimetros\\JTXToolA9\\FormConfigurar.cs",
-              "RelativeDocumentMoniker": "InfoRam\\Multimetros\\JTXToolA9\\FormConfigurar.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Multimetros\\JTXToolA9\\FormConfigurar.cs",
-              "RelativeToolTip": "InfoRam\\Multimetros\\JTXToolA9\\FormConfigurar.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAWwBkAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "FormEditorChip.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorChip.cs",
+              "RelativeDocumentMoniker": "InfoRam\\FormEditorChip.cs",
+              "ToolTip": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorChip.cs [Dise\u00F1o]",
+              "RelativeToolTip": "InfoRam\\FormEditorChip.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-04T22:25:57.652Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormConfigurar.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Multimetros\\JTXToolA9\\FormConfigurar.cs",
-              "RelativeDocumentMoniker": "InfoRam\\Multimetros\\JTXToolA9\\FormConfigurar.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Multimetros\\JTXToolA9\\FormConfigurar.cs [Dise\u00F1o]",
-              "RelativeToolTip": "InfoRam\\Multimetros\\JTXToolA9\\FormConfigurar.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-04T21:58:48.793Z",
+              "WhenOpened": "2026-11-05T05:27:11.604Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "JTXToolA9Multimeter.cs",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Multimetros\\JTXToolA9\\JTXToolA9Multimeter.cs",
+              "DocumentMoniker": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Multimetros\\JTXToolA9\\JTXToolA9Multimeter.cs",
               "RelativeDocumentMoniker": "InfoRam\\Multimetros\\JTXToolA9\\JTXToolA9Multimeter.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Multimetros\\JTXToolA9\\JTXToolA9Multimeter.cs",
+              "ToolTip": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Multimetros\\JTXToolA9\\JTXToolA9Multimeter.cs",
               "RelativeToolTip": "InfoRam\\Multimetros\\JTXToolA9\\JTXToolA9Multimeter.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAywBYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-04T21:57:58.642Z",
+              "WhenOpened": "2026-11-05T04:03:23.781Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AdministradorMultimetros.cs",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Multimetros\\AdministradorMultimetros.cs",
-              "RelativeDocumentMoniker": "InfoRam\\Multimetros\\AdministradorMultimetros.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Multimetros\\AdministradorMultimetros.cs",
-              "RelativeToolTip": "InfoRam\\Multimetros\\AdministradorMultimetros.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAADwvxkAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T04:07:20.662Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MultimetroVitual.cs",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Multimetros\\MultimetroVitual\\MultimetroVitual.cs",
-              "RelativeDocumentMoniker": "InfoRam\\Multimetros\\MultimetroVitual\\MultimetroVitual.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Multimetros\\MultimetroVitual\\MultimetroVitual.cs",
-              "RelativeToolTip": "InfoRam\\Multimetros\\MultimetroVitual\\MultimetroVitual.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAwwC4AAACKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T05:05:13.401Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "FormEditorChip.cs",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorChip.cs",
-              "RelativeDocumentMoniker": "InfoRam\\FormEditorChip.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorChip.cs",
-              "RelativeToolTip": "InfoRam\\FormEditorChip.cs",
-              "ViewState": "AgIAAIYBAAAAAAAAAAAQwI8BAAApAAAAAAAAAA==",
+              "Title": "JtxToolA9Dto.cs",
+              "DocumentMoniker": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Multimetros\\JTXToolA9\\JtxToolA9Dto.cs",
+              "RelativeDocumentMoniker": "InfoRam\\Multimetros\\JTXToolA9\\JtxToolA9Dto.cs",
+              "ToolTip": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Multimetros\\JTXToolA9\\JtxToolA9Dto.cs",
+              "RelativeToolTip": "InfoRam\\Multimetros\\JTXToolA9\\JtxToolA9Dto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-03T05:02:20.945Z",
+              "WhenOpened": "2026-11-05T03:41:46.434Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "FormEditorChip.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorChip.cs",
-              "RelativeDocumentMoniker": "InfoRam\\FormEditorChip.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorChip.cs [Dise\u00F1o]",
-              "RelativeToolTip": "InfoRam\\FormEditorChip.cs [Dise\u00F1o]",
+              "Title": "ManejadorConfiguracion.cs",
+              "DocumentMoniker": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Multimetros\\JTXToolA9\\ManejadorConfiguracion.cs",
+              "RelativeDocumentMoniker": "InfoRam\\Multimetros\\JTXToolA9\\ManejadorConfiguracion.cs",
+              "ToolTip": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Multimetros\\JTXToolA9\\ManejadorConfiguracion.cs",
+              "RelativeToolTip": "InfoRam\\Multimetros\\JTXToolA9\\ManejadorConfiguracion.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-24T04:51:54.021Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FormEditorChip.Designer.cs",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorChip.Designer.cs",
-              "RelativeDocumentMoniker": "InfoRam\\FormEditorChip.Designer.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorChip.Designer.cs",
-              "RelativeToolTip": "InfoRam\\FormEditorChip.Designer.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAqwB4AAACSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-24T04:50:04.332Z",
+              "WhenOpened": "2026-11-05T03:31:46.726Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FormEditorMascara.Designer.cs",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorMascara.Designer.cs",
-              "RelativeDocumentMoniker": "InfoRam\\FormEditorMascara.Designer.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorMascara.Designer.cs",
-              "RelativeToolTip": "InfoRam\\FormEditorMascara.Designer.cs",
-              "ViewState": "AgIAAIwAAAAAAAAAAAApwKAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "FormEditorChip.cs",
+              "DocumentMoniker": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorChip.cs",
+              "RelativeDocumentMoniker": "InfoRam\\FormEditorChip.cs",
+              "ToolTip": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorChip.cs",
+              "RelativeToolTip": "InfoRam\\FormEditorChip.cs",
+              "ViewState": "AgIAAHoBAAAAAAAAAAA6wJABAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-24T04:41:28.793Z"
+              "WhenOpened": "2026-11-05T03:30:24.745Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ControlDibujable.cs",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\ControlDibujable.cs",
-              "RelativeDocumentMoniker": "InfoRam\\Dibujable\\ControlDibujable.cs",
-              "ToolTip": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Dibujable\\ControlDibujable.cs",
-              "RelativeToolTip": "InfoRam\\Dibujable\\ControlDibujable.cs",
-              "ViewState": "AgIAACECAAAAAAAAAAAUwDcCAAAIAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "FormConfigurar.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Multimetros\\JTXToolA9\\FormConfigurar.cs",
+              "RelativeDocumentMoniker": "InfoRam\\Multimetros\\JTXToolA9\\FormConfigurar.cs",
+              "ToolTip": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Multimetros\\JTXToolA9\\FormConfigurar.cs [Dise\u00F1o]",
+              "RelativeToolTip": "InfoRam\\Multimetros\\JTXToolA9\\FormConfigurar.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-24T04:07:23.8Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FormEditorMascara.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Oscar\\Repositorios\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorMascara.cs",
-              "RelativeDocumentMoniker": "InfoRam\\FormEditorMascara.cs",
-              "ToolTip": "C:\\Oscar\\Repositoriosgit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorMascara.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\Repositoriosgit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\FormEditorMascara.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-24T04:05:37.045Z"
+              "WhenOpened": "2026-11-04T21:58:48.793Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

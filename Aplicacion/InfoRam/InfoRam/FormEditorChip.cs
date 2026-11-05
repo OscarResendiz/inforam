@@ -396,6 +396,10 @@ namespace InfoRam
         {
             if (Multimetro == null)
                 return;
+            if(ComboOpciones.SelectedIndex == 0)
+            {
+                return;
+            }
             txtValor.Text = Multimetro.LeeDatos();
             btnAplicar_Click(null, null);
         }
