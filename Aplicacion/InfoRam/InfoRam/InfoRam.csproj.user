@@ -25,7 +25,7 @@
     <Compile Update="FormEditorMascara.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Multimetros\JTXToolA9\FormConfigurar.cs">
+    <Compile Update="Multimetros\PuertoSerial\FormComConfig.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

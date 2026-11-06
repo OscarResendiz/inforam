@@ -11,6 +11,7 @@ namespace InfoRam.Multimetros
             List<string> multimetros = new List<string>();
             multimetros.Add("Multimetro virtual");
             multimetros.Add("JTXToolA9");
+            multimetros.Add("XDM1041");
             return multimetros;
         }
         public IMultimetro ObtenerMultimetro(string nombreMultimetro)
@@ -22,6 +23,10 @@ namespace InfoRam.Multimetros
             else if (nombreMultimetro == "JTXToolA9")
             {
                 return new Multimetros.JTXToolA9.JTXToolA9Multimeter();
+            }
+            else if (nombreMultimetro == "XDM1041")
+            {
+                return new Multimetros.XDM1041.XDM1041Multimeter();
             }
             return null;
         }

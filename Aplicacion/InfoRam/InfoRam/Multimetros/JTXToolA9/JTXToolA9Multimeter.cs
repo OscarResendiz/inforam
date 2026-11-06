@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InfoRam.Multimetros.PuertoSerial;
+using System;
 using System.Collections.Generic;
 using System.IO.Ports;
 using System.Text;
@@ -29,7 +30,7 @@ namespace InfoRam.Multimetros.JTXToolA9
         {
             try
             {
-                FormConfigurar form = new FormConfigurar();
+                FormComConfig form = new FormComConfig("JtxToolA9.config");
                 form.ShowDialog();
                 return true;
             }
@@ -60,7 +61,7 @@ namespace InfoRam.Multimetros.JTXToolA9
         {
             try
             {
-                JtxToolA9Dto config = ManejadorConfiguracion.CargarConfiguracion();
+                SerialPortDto config = ManejadorConfiguracionSerial.CargarConfiguracion("JtxToolA9.config");
                 if (PuertoSerial == null)
                 {
                     PuertoSerial = new SerialPort(config.SerialPort, int.Parse(config.Velocidad), (Parity)Enum.Parse(typeof(Parity), config.Paridad), int.Parse(config.BitsDatos), (StopBits)Enum.Parse(typeof(StopBits), config.BitsParada));

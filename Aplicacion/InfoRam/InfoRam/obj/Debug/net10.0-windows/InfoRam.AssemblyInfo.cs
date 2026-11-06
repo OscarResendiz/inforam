@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InfoRam")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8193afeffefa788d5a044aa5953600e427b6d9f6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2816eed16ed080aff7842d3bca4c2f6fc4c0f14")]
 [assembly: System.Reflection.AssemblyProductAttribute("InfoRam")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InfoRam")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

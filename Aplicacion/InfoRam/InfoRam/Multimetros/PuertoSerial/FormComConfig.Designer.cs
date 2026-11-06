@@ -1,6 +1,6 @@
-﻿namespace InfoRam.Multimetros.JTXToolA9
+﻿namespace InfoRam.Multimetros.PuertoSerial
 {
-    partial class FormConfigurar
+    partial class FormComConfig
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormConfigurar));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormComConfig));
             groupBox1 = new GroupBox();
             ComboBitsParo = new ComboBox();
             label5 = new Label();
@@ -40,14 +40,9 @@
             label2 = new Label();
             ComboPuerto = new ComboBox();
             label1 = new Label();
-            groupBox2 = new GroupBox();
-            TxtRetardo = new NumericUpDown();
-            label6 = new Label();
             BtnAceptar = new Button();
             BtnCancelar = new Button();
             groupBox1.SuspendLayout();
-            groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)TxtRetardo).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
@@ -182,45 +177,12 @@
             label1.TabIndex = 0;
             label1.Text = "Puerto COM";
             // 
-            // groupBox2
-            // 
-            groupBox2.BackColor = Color.Transparent;
-            groupBox2.Controls.Add(TxtRetardo);
-            groupBox2.Controls.Add(label6);
-            groupBox2.Dock = DockStyle.Top;
-            groupBox2.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
-            groupBox2.ForeColor = SystemColors.ActiveCaption;
-            groupBox2.Location = new Point(0, 230);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(404, 100);
-            groupBox2.TabIndex = 1;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Otros";
-            // 
-            // TxtRetardo
-            // 
-            TxtRetardo.Location = new Point(146, 27);
-            TxtRetardo.Name = "TxtRetardo";
-            TxtRetardo.Size = new Size(246, 33);
-            TxtRetardo.TabIndex = 2;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
-            label6.ForeColor = SystemColors.ActiveCaption;
-            label6.Location = new Point(11, 35);
-            label6.Name = "label6";
-            label6.Size = new Size(79, 25);
-            label6.TabIndex = 0;
-            label6.Text = "Retardo";
-            // 
             // BtnAceptar
             // 
             BtnAceptar.BackgroundImage = (Image)resources.GetObject("BtnAceptar.BackgroundImage");
             BtnAceptar.BackgroundImageLayout = ImageLayout.Stretch;
             BtnAceptar.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
-            BtnAceptar.Location = new Point(20, 336);
+            BtnAceptar.Location = new Point(20, 249);
             BtnAceptar.Name = "BtnAceptar";
             BtnAceptar.Size = new Size(70, 70);
             BtnAceptar.TabIndex = 2;
@@ -233,31 +195,28 @@
             BtnCancelar.BackgroundImageLayout = ImageLayout.Stretch;
             BtnCancelar.DialogResult = DialogResult.Cancel;
             BtnCancelar.Font = new Font("Segoe UI Semibold", 14.25F, FontStyle.Bold);
-            BtnCancelar.Location = new Point(293, 336);
+            BtnCancelar.Location = new Point(293, 249);
             BtnCancelar.Name = "BtnCancelar";
             BtnCancelar.Size = new Size(70, 70);
             BtnCancelar.TabIndex = 3;
             BtnCancelar.UseVisualStyleBackColor = true;
             // 
-            // FormConfigurar
+            // FormComConfig
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             CancelButton = BtnCancelar;
-            ClientSize = new Size(404, 415);
+            ClientSize = new Size(404, 334);
             Controls.Add(BtnCancelar);
             Controls.Add(BtnAceptar);
-            Controls.Add(groupBox2);
             Controls.Add(groupBox1);
-            Name = "FormConfigurar";
-            Text = "JTXTool A9";
+            Name = "FormComConfig";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Puerto Serie";
             Load += FormConfigurar_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)TxtRetardo).EndInit();
             ResumeLayout(false);
         }
 
@@ -274,10 +233,7 @@
         private Label label5;
         private ComboBox ComboBitsDatos;
         private Label label4;
-        private GroupBox groupBox2;
-        private Label label6;
         private Button BtnAceptar;
         private Button BtnCancelar;
-        private NumericUpDown TxtRetardo;
     }
 }

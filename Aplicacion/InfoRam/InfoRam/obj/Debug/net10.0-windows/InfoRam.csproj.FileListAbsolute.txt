@@ -119,4 +119,4 @@ D:\RepositoriosGit\inforam\Aplicacion\InfoRam\InfoRam\bin\Debug\net10.0-windows\
 D:\RepositoriosGit\inforam\Aplicacion\InfoRam\InfoRam\bin\Debug\net10.0-windows\runtimes\unix\lib\net10.0\System.IO.Ports.dll
 D:\RepositoriosGit\inforam\Aplicacion\InfoRam\InfoRam\bin\Debug\net10.0-windows\runtimes\win\lib\net10.0\System.IO.Ports.dll
 D:\RepositoriosGit\inforam\Aplicacion\InfoRam\InfoRam\obj\Debug\net10.0-windows\InfoRam.csproj.AssemblyReference.cache
-D:\RepositoriosGit\inforam\Aplicacion\InfoRam\InfoRam\obj\Debug\net10.0-windows\InfoRam.Multimetros.JTXToolA9.FormConfigurar.resources
+D:\RepositoriosGit\inforam\Aplicacion\InfoRam\InfoRam\obj\Debug\net10.0-windows\InfoRam.Multimetros.PuertoSerial.FormComConfig.resources

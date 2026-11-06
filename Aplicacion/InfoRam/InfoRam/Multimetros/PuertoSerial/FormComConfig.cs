@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InfoRam.Multimetros.PuertoSerial;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -6,14 +7,16 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace InfoRam.Multimetros.JTXToolA9
+namespace InfoRam.Multimetros.PuertoSerial
 {
-    public partial class FormConfigurar : Form
+    public partial class FormComConfig : Form
     {
+        private string NombreArchivo { get; set; } ="";
 
-        public FormConfigurar()
+        public FormComConfig(string nombreArchivo)
         {
             InitializeComponent();
+            NombreArchivo = nombreArchivo;
         }
         private void CargaPuertos()
         {
@@ -35,26 +38,26 @@ namespace InfoRam.Multimetros.JTXToolA9
         }
         private void GuardaDatos()
         {
-            var config = new JtxToolA9Dto
+            var config = new SerialPortDto
             {
                 SerialPort = ComboPuerto.SelectedItem?.ToString() ?? string.Empty,
                 Velocidad = ComboVelocidad.SelectedItem?.ToString() ?? string.Empty,
                 Paridad = ComboParidad.SelectedItem?.ToString() ?? string.Empty,
                 BitsDatos = ComboBitsDatos.SelectedItem?.ToString() ?? string.Empty,
                 BitsParada = ComboBitsParo.SelectedItem?.ToString() ?? string.Empty,
-                retardo = TxtRetardo.Text
+                //retardo = TxtRetardo.Text
             };
-            ManejadorConfiguracion.GuardarConfiguracion(config);
+            ManejadorConfiguracionSerial.GuardarConfiguracion(config, NombreArchivo);
         }
         private void LeerDatos()
         {
-            var config = ManejadorConfiguracion.CargarConfiguracion();
+            var config = ManejadorConfiguracionSerial.CargarConfiguracion(NombreArchivo);
             ComboPuerto.SelectedItem = config.SerialPort;
             ComboVelocidad.SelectedItem = config.Velocidad;
             ComboParidad.SelectedItem = config.Paridad;
             ComboBitsDatos.SelectedItem = config.BitsDatos;
             ComboBitsParo.SelectedItem = config.BitsParada;
-            TxtRetardo.Text = config.retardo;
+            //TxtRetardo.Text = config.retardo;
         }
     }
 }
