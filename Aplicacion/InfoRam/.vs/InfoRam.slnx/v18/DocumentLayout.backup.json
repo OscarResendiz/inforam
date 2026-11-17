@@ -1,18 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\",
+  "WorkspaceRootPath": "C:\\Oscar\\Repositoriosgit\\inforam\\Aplicacion\\InfoRam\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|d:\\repositoriosgit\\inforam\\aplicacion\\inforam\\inforam\\multimetros\\administradormultimetros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\multimetros\\administradormultimetros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|d:\\repositoriosgit\\inforam\\aplicacion\\inforam\\inforam\\multimetros\\jtxtoola9\\jtxtoola9multimeter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\multimetros\\jtxtoola9\\jtxtoola9multimeter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|d:\\repositoriosgit\\inforam\\aplicacion\\inforam\\inforam\\multimetros\\xdm1041\\xdm1041multimeter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\multimetros\\xdm1041\\xdm1041multimeter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|c:\\oscar\\repositoriosgit\\inforam\\aplicacion\\inforam\\inforam\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{804533CA-0347-6A43-7630-8AE9CF7748D3}|InfoRam\\InfoRam.csproj|solutionrelative:inforam\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,41 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AdministradorMultimetros.cs",
-              "DocumentMoniker": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Multimetros\\AdministradorMultimetros.cs",
-              "RelativeDocumentMoniker": "InfoRam\\Multimetros\\AdministradorMultimetros.cs",
-              "ToolTip": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Multimetros\\AdministradorMultimetros.cs*",
-              "RelativeToolTip": "InfoRam\\Multimetros\\AdministradorMultimetros.cs*",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAowA0AAAAnAAAAAAAAAA==",
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Oscar\\Repositoriosgit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Form1.cs",
+              "RelativeDocumentMoniker": "InfoRam\\Form1.cs",
+              "ToolTip": "C:\\Oscar\\Repositoriosgit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Form1.cs [Dise\u00F1o]*",
+              "RelativeToolTip": "InfoRam\\Form1.cs [Dise\u00F1o]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-06T04:03:09.578Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "JTXToolA9Multimeter.cs",
-              "DocumentMoniker": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Multimetros\\JTXToolA9\\JTXToolA9Multimeter.cs",
-              "RelativeDocumentMoniker": "InfoRam\\Multimetros\\JTXToolA9\\JTXToolA9Multimeter.cs",
-              "ToolTip": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Multimetros\\JTXToolA9\\JTXToolA9Multimeter.cs",
-              "RelativeToolTip": "InfoRam\\Multimetros\\JTXToolA9\\JTXToolA9Multimeter.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAQwHoAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-06T03:21:14.768Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "XDM1041Multimeter.cs",
-              "DocumentMoniker": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Multimetros\\XDM1041\\XDM1041Multimeter.cs",
-              "RelativeDocumentMoniker": "InfoRam\\Multimetros\\XDM1041\\XDM1041Multimeter.cs",
-              "ToolTip": "D:\\RepositoriosGit\\inforam\\Aplicacion\\InfoRam\\InfoRam\\Multimetros\\XDM1041\\XDM1041Multimeter.cs",
-              "RelativeToolTip": "InfoRam\\Multimetros\\XDM1041\\XDM1041Multimeter.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAYwGwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-06T03:20:46.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-15T01:55:23.232Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

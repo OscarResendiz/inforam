@@ -33,6 +33,7 @@
             panel2 = new Panel();
             panel3 = new Panel();
             panel4 = new Panel();
+            panel5 = new Panel();
             SuspendLayout();
             // 
             // panel1
@@ -74,6 +75,16 @@
             panel4.Size = new Size(90, 80);
             panel4.TabIndex = 4;
             // 
+            // panel5
+            // 
+            panel5.BackColor = Color.Transparent;
+            panel5.BackgroundImage = (Image)resources.GetObject("panel5.BackgroundImage");
+            panel5.BackgroundImageLayout = ImageLayout.Stretch;
+            panel5.Location = new Point(2, 12);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(90, 80);
+            panel5.TabIndex = 5;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -82,6 +93,7 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(542, 346);
             ControlBox = false;
+            Controls.Add(panel5);
             Controls.Add(panel4);
             Controls.Add(panel3);
             Controls.Add(panel2);
@@ -98,5 +110,6 @@
         private Panel panel2;
         private Panel panel3;
         private Panel panel4;
+        private Panel panel5;
     }
 }

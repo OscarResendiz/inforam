@@ -42,7 +42,10 @@ namespace InfoRam.Multimetros.XDM1041
         {
             try
             {
-                PuertoSerial.Close();
+                if(PuertoSerial!= null && PuertoSerial.IsOpen)
+                {
+                    PuertoSerial.Close();
+                }
                 return true;
             }
             catch (Exception ex)
@@ -54,7 +57,7 @@ namespace InfoRam.Multimetros.XDM1041
         public string LeeDatos()
         {
 
-            EnviarComando("MEAS1\r\n");
+            EnviarComando("MEAS1:SHOW?\r\n");
             //doy tiempo a que el multimetro responda
             System.Threading.Thread.Sleep(200);
             return Datos;
@@ -83,6 +86,7 @@ namespace InfoRam.Multimetros.XDM1041
             }
             catch (Exception ex)
             {
+                System.Windows.Forms.MessageBox.Show("Error al conectar con el multímetro: " + ex.Message, "Error de conexión", System.Windows.Forms.MessageBoxButtons.OK, System.Windows.Forms.MessageBoxIcon.Error);
                 return false;
             }
         }
@@ -93,7 +97,7 @@ namespace InfoRam.Multimetros.XDM1041
             string[] lineas = datos.Split(new[] { "\r\n", "\n" }, StringSplitOptions.RemoveEmptyEntries);
             if (lineas.Length > 0)
             {
-                Datos = lineas[lineas.Length-1]; // Store the last line of data received
+                Datos = lineas[lineas.Length-1].Replace("VDC", ""); // Store the last line of data received
             }
 
         }
